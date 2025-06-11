@@ -1,0 +1,438 @@
+--------------------------------------------------------------------------------
+Command:            ./tripple_DES
+Massif arguments:   (none)
+ms_print arguments: massif.out.2565
+--------------------------------------------------------------------------------
+
+
+    KB
+134.9^                                                                       #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@:::::::::::::::::::::::::::::::::::@::::::::::::::::::::::::::::::::::#
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   7.338
+
+Number of snapshots: 89
+ Detailed snapshots: [9, 11, 19, 29, 35, 45, 55, 62 (peak), 72, 82]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,668,883           72,712           72,704             8            0
+  2      9,683,475           72,736           72,720            16            0
+  3      9,684,555           72,760           72,736            24            0
+  4      9,684,775           72,784           72,752            32            0
+  5      9,687,797           72,808           72,768            40            0
+  6      9,687,891           72,832           72,784            48            0
+  7      9,689,623           72,856           72,792            64            0
+  8      9,798,324           73,888           73,816            72            0
+  9      9,816,040           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10FEB3: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|                   
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,817,788           74,032           73,936            96            0
+ 11      9,829,255           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10FEB3: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|                   
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,829,255           73,992           73,904            88            0
+ 13      9,830,174           74,032           73,928           104            0
+ 14      9,832,003           74,280           74,168           112            0
+ 15      9,844,599           90,672           90,552           120            0
+ 16      9,844,687          107,064          106,936           128            0
+ 17      9,844,775          123,456          123,320           136            0
+ 18     10,209,338          123,592          123,440           152            0
+ 19     10,230,016          123,592          123,440           152            0
+99.88% (123,440B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.83% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.83% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.83% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.83% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.83% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.15% (49,624B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.79% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->13.26% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.26% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.26% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.36% (448B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 20     10,230,016          123,456          123,320           136            0
+ 21     10,230,093          123,592          123,440           152            0
+ 22     10,250,810          123,456          123,320           136            0
+ 23     10,250,905          123,592          123,440           152            0
+ 24     10,271,519          123,456          123,320           136            0
+ 25     10,272,154          123,592          123,440           152            0
+ 26     10,292,815          123,456          123,320           136            0
+ 27     10,292,892          123,592          123,440           152            0
+ 28     10,313,562          123,456          123,320           136            0
+ 29     10,313,657          123,592          123,440           152            0
+99.88% (123,440B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.83% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.83% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.83% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.83% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.83% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.15% (49,624B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.79% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->13.26% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.26% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.26% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.26% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.36% (448B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30     10,334,382          123,456          123,320           136            0
+ 31     10,344,173          123,944          123,792           152            0
+ 32     10,346,220          132,144          131,984           160            0
+ 33     10,358,082          132,184          132,015           169            0
+ 34     10,363,677          132,272          132,084           188            0
+ 35     10,364,348          132,272          132,084           188            0
+99.86% (132,084B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.97% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->54.97% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->54.97% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.43% (49,504B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.18% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->12.39% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.39% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->12.39% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.39% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->12.39% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.39% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.25% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.19% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.19% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.19% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.19% (8,192B) 0x113283: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|       ->06.19% (8,192B) 0x111653: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|         ->06.19% (8,192B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|           
+->01.27% (1,684B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 36     10,364,348          132,232          132,053           179            0
+ 37     10,375,384          132,144          131,984           160            0
+ 38     10,379,566          123,944          123,792           152            0
+ 39     10,382,265          123,456          123,320           136            0
+ 40  3,944,611,108          123,944          123,792           152            0
+ 41  3,944,611,656          132,144          131,984           160            0
+ 42  3,944,612,096          132,184          132,015           169            0
+ 43  3,944,615,902          132,272          132,084           188            0
+ 44  3,944,615,977          132,232          132,053           179            0
+ 45  3,944,620,570          132,144          131,984           160            0
+99.88% (131,984B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.02% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->55.02% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->55.02% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->55.02% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->55.02% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.46% (49,504B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.21% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->12.40% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.40% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->12.40% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.40% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->12.40% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->12.40% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.25% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.20% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.20% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.20% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.20% (8,192B) 0x113283: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|       ->06.20% (8,192B) 0x1116F7: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|       | ->06.20% (8,192B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|       |   
+|       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|       
+->01.20% (1,584B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 46  3,944,620,687          123,944          123,792           152            0
+ 47  3,944,621,176          123,456          123,320           136            0
+ 48  7,878,843,969          123,944          123,792           152            0
+ 49  7,878,844,517          132,144          131,984           160            0
+ 50  7,878,844,957          132,184          132,015           169            0
+ 51  7,878,848,763          132,272          132,084           188            0
+ 52  7,878,848,838          132,232          132,053           179            0
+ 53  7,878,853,431          132,144          131,984           160            0
+ 54  7,878,853,548          123,944          123,792           152            0
+ 55  7,878,854,037          123,456          123,320           136            0
+99.89% (123,320B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.89% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.89% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.89% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.89% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.89% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.10% (49,504B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.83% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->13.27% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.27% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.27% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.27% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->13.27% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->13.27% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.27% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 56  7,878,893,606          123,944          123,792           152            0
+ 57  7,878,894,185          132,144          131,984           160            0
+ 58  7,878,896,209          132,168          131,999           169            0
+ 59  7,878,896,323          132,656          132,471           185            0
+ 60  7,878,897,032          136,760          136,567           193            0
+ 61  7,878,897,904          138,128          137,920           208            0
+ 62  7,878,901,128          138,128          137,920           208            0
+99.85% (137,920B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->52.64% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->52.64% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->52.64% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->52.64% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->52.64% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->35.84% (49,504B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->35.60% (49,176B) 0x110E2B: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | ->11.86% (16,384B) 0x111597: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->11.86% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->11.86% (16,384B) 0x1115A3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->11.86% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->11.86% (16,384B) 0x1115AF: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | | ->11.86% (16,384B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+| | |   
+| | ->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.24% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.93% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->05.93% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->05.93% (8,192B) 0x4E69E07: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   | ->05.93% (8,192B) 0x111AA7: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|   |   ->05.93% (8,192B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->03.71% (5,120B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->03.71% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->03.71% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->02.97% (4,096B) 0x5036BBB: _IO_file_xsgetn (fileops.c:1287)
+|     | ->02.97% (4,096B) 0x503570F: fread_unlocked (iofread_u.c:40)
+|     |   ->02.97% (4,096B) 0x506A62F: __tzfile_read (tzfile.c:186)
+|     |     ->02.97% (4,096B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     |       ->02.97% (4,096B) 0x506A317: __tz_convert (tzset.c:577)
+|     |         ->02.97% (4,096B) 0x506863B: ctime (ctime.c:27)
+|     |           ->02.97% (4,096B) 0x111AD3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|     |             ->02.97% (4,096B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|     |               
+|     ->00.74% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->01.74% (2,400B) in 5 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 63  7,878,901,128          134,024          133,824           200            0
+ 64  7,878,901,263          133,536          133,352           184            0
+ 65  7,878,901,358          133,576          133,372           204            0
+ 66  7,878,901,496          133,616          133,393           223            0
+ 67  7,878,901,664          133,656          133,414           242            0
+ 68  7,878,929,431          125,456          125,222           234            0
+ 69  7,878,929,920          124,968          124,750           218            0
+ 70  7,878,983,801          108,576          108,366           210            0
+ 71  7,879,033,037           92,184           91,982           202            0
+ 72  7,879,082,273           75,792           75,598           194            0
+99.74% (75,598B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->95.93% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->95.93% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->95.93% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->95.93% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->95.93% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.79% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.79% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.79% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.79% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.79% (1,353B) 0x111AD3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|         ->01.79% (1,353B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|           
+->01.35% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.35% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.35% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.35% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->01.35% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->01.35% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->01.35% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->01.35% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->01.35% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->01.35% (1,024B) 0x10FEB3: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.68% (517B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 73  7,879,082,429           75,752           75,574           178            0
+ 74  7,879,082,764           75,504           75,334           170            0
+ 75  7,879,083,503           75,400           75,246           154            0
+ 76  7,879,096,121           75,376           75,238           138            0
+ 77  7,879,097,873           75,352           75,222           130            0
+ 78  7,879,097,943           75,328           75,206           122            0
+ 79  7,879,098,223           75,304           75,190           114            0
+ 80  7,879,098,339           75,280           75,174           106            0
+ 81  7,879,098,455           75,256           75,158            98            0
+ 82  7,879,106,202            2,544            2,454            90            0
+96.46% (2,454B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->53.18% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->53.18% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->53.18% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->53.18% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->53.18% (1,353B) 0x111AD3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|         ->53.18% (1,353B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|           
+->40.25% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->40.25% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->40.25% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->40.25% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->40.25% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->40.25% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->40.25% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->40.25% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->40.25% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->40.25% (1,024B) 0x10FEB3: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->01.65% (42B) 0x50696C3: __tzstring_len (tzset.c:98)
+| ->01.65% (42B) 0x506AE0F: __tzfile_read (tzfile.c:412)
+|   ->01.65% (42B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     ->01.65% (42B) 0x506A317: __tz_convert (tzset.c:577)
+|       ->01.65% (42B) 0x506863B: ctime (ctime.c:27)
+|         ->01.65% (42B) 0x111AD3: void BenchmarkBlockCipher<CryptoPP::DES_EDE3>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|           ->01.65% (42B) 0x10FEEB: main (in /home/kali/Desktop/share/16KB/Speed & RAM/tripple_DES)
+|             
+->01.38% (35B) in 8 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 83  7,879,108,215            1,512            1,430            82            0
+ 84  7,879,108,306            1,472            1,410            62            0
+ 85  7,879,108,344            1,432            1,389            43            0
+ 86  7,879,108,382            1,392            1,368            24            0
+ 87  7,879,108,419            1,368            1,353            15            0
+ 88  7,879,109,697                0                0             0            0

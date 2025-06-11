@@ -1,0 +1,610 @@
+desc: (none)
+cmd: ./aes
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=9681293
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=9695885
+mem_heap_B=72720
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=9696965
+mem_heap_B=72736
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=9697185
+mem_heap_B=72752
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=9700207
+mem_heap_B=72768
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9700301
+mem_heap_B=72784
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=9702033
+mem_heap_B=72792
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=9810726
+mem_heap_B=73816
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9828098
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x1103B3: main (aes.cpp:5)
+ n0: 176 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=9829846
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=9841308
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x1103B3: main (aes.cpp:5)
+ n0: 208 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=9841308
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=9842224
+mem_heap_B=73920
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=9844064
+mem_heap_B=74160
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9856312
+mem_heap_B=1122736
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=9856400
+mem_heap_B=2171312
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=9856488
+mem_heap_B=3219888
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=32928465
+mem_heap_B=3220064
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=32929684
+mem_heap_B=3220240
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=32952203
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=32954210
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3228904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3146424 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 3145744 0x1111C7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+   n1: 1048576 0x1119DF: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119EB: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119F7: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 680 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9776 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=32966025
+mem_heap_B=3228935
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=32971620
+mem_heap_B=3229004
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=32972291
+mem_heap_B=3229004
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=peak
+n3: 3229004 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3146424 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 3145744 0x1111C7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+   n1: 1048576 0x1119DF: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119EB: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119F7: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 680 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9876 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=32972291
+mem_heap_B=3228973
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=32983231
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=32987425
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=32990124
+mem_heap_B=3220240
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=51217270
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=51217818
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=51218258
+mem_heap_B=3228935
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=51222064
+mem_heap_B=3229004
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=51222139
+mem_heap_B=3228973
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=51226732
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3228904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3146424 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 3145744 0x1111C7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+   n1: 1048576 0x1119DF: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119EB: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119F7: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 680 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9776 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=51226849
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=51227338
+mem_heap_B=3220240
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=69385913
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=69386461
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=69386901
+mem_heap_B=3228935
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=69390707
+mem_heap_B=3229004
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=69390782
+mem_heap_B=3228973
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=69395375
+mem_heap_B=3228904
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=69395492
+mem_heap_B=3220712
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=69395981
+mem_heap_B=3220240
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3220240 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3146424 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 3145744 0x1111C7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+   n1: 1048576 0x1119DF: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119EB: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n1: 1048576 0x1119F7: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+    n0: 1048576 0x1103EB: main (aes.cpp:6)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 680 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 1112 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=69758603
+mem_heap_B=3220064
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=69759558
+mem_heap_B=3219888
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=72905514
+mem_heap_B=2171312
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=76051326
+mem_heap_B=1122736
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=79197138
+mem_heap_B=74160
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=79197270
+mem_heap_B=74144
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=79198325
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=79199210
+mem_heap_B=73816
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=79211814
+mem_heap_B=73808
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=79213561
+mem_heap_B=73792
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73792 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x1103B3: main (aes.cpp:5)
+ n0: 64 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=79213631
+mem_heap_B=73776
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=79213911
+mem_heap_B=73760
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=79214027
+mem_heap_B=73744
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=79214143
+mem_heap_B=73728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=79221890
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=79223903
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

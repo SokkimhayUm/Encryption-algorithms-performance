@@ -1,0 +1,278 @@
+Command:            ./simon
+Massif arguments:   (none)
+ms_print arguments: massif.out.2829
+--------------------------------------------------------------------------------
+
+
+    MB
+3.080^                   #                      :                       :
+     |     ::::::::::::::#::::::::::::::::::::::@:::::::::::::::::::::::@:
+     |     :             #                      @                       @
+     |     :             #                      @                       @
+     |     :             #                      @                       @
+     |     :             #                      @                       @
+     |     :             #                      @                       @
+     |     :             #                      @                       @ ::
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ :
+     |     :             #                      @                       @ : :
+     |     :             #                      @                       @ : :
+     |     :             #                      @                       @ : :
+     |     :             #                      @                       @ : :
+     |     :             #                      @                       @ : :
+     |     :             #                      @                       @ : :
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   114.0
+
+Number of snapshots: 65
+ Detailed snapshots: [9, 11, 21, 26 (peak), 36, 46, 56]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,673,374           72,712           72,704             8            0
+  2      9,687,966           72,736           72,720            16            0
+  3      9,689,046           72,760           72,736            24            0
+  4      9,689,266           72,784           72,752            32            0
+  5      9,692,254           72,808           72,768            40            0
+  6      9,692,348           72,832           72,784            48            0
+  7      9,694,080           72,856           72,792            64            0
+  8      9,802,813           73,888           73,816            72            0
+  9      9,820,394           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110173: main (simon.cpp:5)
+|
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,822,143           74,032           73,936            96            0
+ 11      9,833,679           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110173: main (simon.cpp:5)
+|
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,833,679           73,992           73,904            88            0
+ 13      9,834,555           74,016           73,920            96            0
+ 14      9,836,384           74,264           74,160           104            0
+ 15      9,848,627        1,122,848        1,122,736           112            0
+ 16      9,848,715        2,171,432        2,171,312           120            0
+ 17      9,848,803        3,220,016        3,219,888           128            0
+ 18     32,920,809        3,220,056        3,219,920           136            0
+ 19     32,920,887        3,220,608        3,220,464           144            0
+ 20     32,922,234        3,220,648        3,220,496           152            0
+ 21     32,922,312        3,221,200        3,221,040           160            0
+100.00% (3,221,040B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.70% (3,147,224B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.66% (3,145,744B) 0x1114DB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.55% (1,048,576B) 0x111DFB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.55% (1,048,576B) 0x111E07: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.55% (1,048,576B) 0x111E13: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.05% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.03% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     32,932,922        3,221,688        3,221,512           176            0
+ 23     32,934,929        3,229,888        3,229,704           184            0
+ 24     32,946,775        3,229,928        3,229,735           193            0
+ 25     32,952,369        3,230,016        3,229,804           212            0
+ 26     32,953,040        3,230,016        3,229,804           212            0
+99.99% (3,229,804B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.44% (3,147,224B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.39% (3,145,744B) 0x1114DB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.46% (1,048,576B) 0x111DFB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.46% (1,048,576B) 0x111E07: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.46% (1,048,576B) 0x111E13: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.05% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.25% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.25% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.25% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.31% (9,876B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27     32,953,040        3,229,976        3,229,773           203            0
+ 28     32,964,046        3,229,888        3,229,704           184            0
+ 29     32,968,247        3,221,688        3,221,512           176            0
+ 30     32,970,946        3,221,200        3,221,040           160            0
+ 31     71,317,587        3,221,688        3,221,512           176            0
+ 32     71,318,135        3,229,888        3,229,704           184            0
+ 33     71,318,575        3,229,928        3,229,735           193            0
+ 34     71,322,381        3,230,016        3,229,804           212            0
+ 35     71,322,456        3,229,976        3,229,773           203            0
+ 36     71,327,049        3,229,888        3,229,704           184            0
+99.99% (3,229,704B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.44% (3,147,224B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.39% (3,145,744B) 0x1114DB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.46% (1,048,576B) 0x111DFB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.46% (1,048,576B) 0x111E07: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.46% (1,048,576B) 0x111E13: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.46% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.05% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.25% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.25% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.25% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.30% (9,776B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 37     71,327,166        3,221,688        3,221,512           176            0
+ 38     71,327,655        3,221,200        3,221,040           160            0
+ 39    109,669,807        3,221,688        3,221,512           176            0
+ 40    109,670,355        3,229,888        3,229,704           184            0
+ 41    109,670,795        3,229,928        3,229,735           193            0
+ 42    109,674,601        3,230,016        3,229,804           212            0
+ 43    109,674,676        3,229,976        3,229,773           203            0
+ 44    109,679,269        3,229,888        3,229,704           184            0
+ 45    109,679,386        3,221,688        3,221,512           176            0
+ 46    109,679,875        3,221,200        3,221,040           160            0
+100.00% (3,221,040B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.70% (3,147,224B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.66% (3,145,744B) 0x1114DB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.55% (1,048,576B) 0x111DFB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.55% (1,048,576B) 0x111E07: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->32.55% (1,048,576B) 0x111E13: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.55% (1,048,576B) 0x1101AB: main (simon.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.05% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.03% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 47    110,042,730        3,220,648        3,220,496           152            0
+ 48    110,042,923        3,220,608        3,220,464           144            0
+ 49    110,044,176        3,220,056        3,219,920           136            0
+ 50    110,044,369        3,220,016        3,219,888           128            0
+ 51    113,191,016        2,171,432        2,171,312           120            0
+ 52    116,336,828        1,122,848        1,122,736           112            0
+ 53    119,482,640           74,264           74,160           104            0
+ 54    119,482,772           74,240           74,144            96            0
+ 55    119,483,107           73,992           73,904            88            0
+ 56    119,483,846           73,888           73,816            72            0
+99.90% (73,816B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.40% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.40% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.40% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.40% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.40% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.39% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.39% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.39% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.39% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.39% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.39% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.39% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.39% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.39% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.39% (1,024B) 0x110173: main (simon.cpp:5)
+|
+->00.12% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 57    119,496,490           73,864           73,808            56            0
+ 58    119,498,370           73,840           73,792            48            0
+ 59    119,498,543           73,816           73,776            40            0
+ 60    119,498,828           73,792           73,760            32            0
+ 61    119,498,944           73,768           73,744            24            0
+ 62    119,499,060           73,744           73,728            16            0
+ 63    119,506,807            1,032            1,024             8            0
+ 64    119,508,820                0                0             0            0

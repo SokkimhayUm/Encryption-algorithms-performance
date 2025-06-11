@@ -1,0 +1,270 @@
+Command:            ./tea
+Massif arguments:   (none)
+ms_print arguments: massif.out.2831
+--------------------------------------------------------------------------------
+
+
+    MB
+3.079^            #                            :                          :
+     |   :::::::::#::::::::::::::::::::::::::::@::::::::::::::::::::::::::@
+     |   :        #:                           @                          @
+     |   :        #:                           @                          @
+     |   :        #:                           @                          @
+     |   :        #:                           @                          @
+     |   :        #:                           @                          @
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @:
+     |   :        #:                           @                          @::
+     |   :        #:                           @                          @::
+     |   :        #:                           @                          @::
+     |   :        #:                           @                          @::
+     |   :        #:                           @                          @::
+     |   :        #:                           @                          @::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   174.1
+
+Number of snapshots: 57
+ Detailed snapshots: [9, 11, 21, 22 (peak), 32, 42, 52]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,678,580           72,712           72,704             8            0
+  2      9,693,172           72,736           72,720            16            0
+  3      9,694,252           72,760           72,736            24            0
+  4      9,694,472           72,784           72,752            32            0
+  5      9,697,494           72,808           72,768            40            0
+  6      9,697,588           72,832           72,784            48            0
+  7      9,699,360           72,856           72,792            64            0
+  8      9,808,396           73,888           73,816            72            0
+  9      9,825,800           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10EDB3: main (tea.cpp:5)
+|
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,827,549           74,032           73,936            96            0
+ 11      9,839,051           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10EDB3: main (tea.cpp:5)
+|
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,839,051           73,992           73,904            88            0
+ 13      9,839,967           74,016           73,920            96            0
+ 14      9,841,796           74,264           74,160           104            0
+ 15      9,854,039        1,122,848        1,122,736           112            0
+ 16      9,854,127        2,171,432        2,171,312           120            0
+ 17      9,854,215        3,220,016        3,219,888           128            0
+ 18     32,936,363        3,220,504        3,220,360           144            0
+ 19     32,938,410        3,228,704        3,228,552           152            0
+ 20     32,950,253        3,228,744        3,228,583           161            0
+ 21     32,955,849        3,228,832        3,228,652           180            0
+99.99% (3,228,652B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.44% (3,146,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.43% (3,145,744B) 0x10FBC7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.48% (1,048,576B) 0x1103F3: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x1103FF: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x11040B: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.01% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.25% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.25% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.25% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.31% (9,876B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     32,956,520        3,228,832        3,228,652           180            0
+99.99% (3,228,652B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.44% (3,146,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.43% (3,145,744B) 0x10FBC7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.48% (1,048,576B) 0x1103F3: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x1103FF: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x11040B: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.01% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.25% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.25% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.25% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.31% (9,876B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23     32,956,520        3,228,792        3,228,621           171            0
+ 24     32,967,576        3,228,704        3,228,552           152            0
+ 25     32,971,777        3,220,504        3,220,360           144            0
+ 26     32,974,476        3,220,016        3,219,888           128            0
+ 27    104,941,091        3,220,504        3,220,360           144            0
+ 28    104,941,639        3,228,704        3,228,552           152            0
+ 29    104,942,079        3,228,744        3,228,583           161            0
+ 30    104,945,885        3,228,832        3,228,652           180            0
+ 31    104,945,960        3,228,792        3,228,621           171            0
+ 32    104,950,553        3,228,704        3,228,552           152            0
+100.00% (3,228,552B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.44% (3,146,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.43% (3,145,744B) 0x10FBC7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.48% (1,048,576B) 0x1103F3: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x1103FF: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.48% (1,048,576B) 0x11040B: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.48% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.01% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.25% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.25% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.25% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.25% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.30% (9,776B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33    104,950,670        3,220,504        3,220,360           144            0
+ 34    104,951,159        3,220,016        3,219,888           128            0
+ 35    172,718,972        3,220,504        3,220,360           144            0
+ 36    172,719,520        3,228,704        3,228,552           152            0
+ 37    172,719,960        3,228,744        3,228,583           161            0
+ 38    172,723,766        3,228,832        3,228,652           180            0
+ 39    172,723,841        3,228,792        3,228,621           171            0
+ 40    172,728,434        3,228,704        3,228,552           152            0
+ 41    172,728,551        3,220,504        3,220,360           144            0
+ 42    172,729,040        3,220,016        3,219,888           128            0
+100.00% (3,219,888B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->97.70% (3,146,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->97.69% (3,145,744B) 0x10FBC7: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (secblock.h:767)
+| | ->32.56% (1,048,576B) 0x1103F3: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.56% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.56% (1,048,576B) 0x1103FF: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.56% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->32.56% (1,048,576B) 0x11040B: void BenchmarkBlockCipher<CryptoPP::TEA>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (common.tpp:12)
+| | | ->32.56% (1,048,576B) 0x10EDEB: main (tea.cpp:6)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.01% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->02.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->02.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->02.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->02.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.03% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 43    176,236,222        2,171,432        2,171,312           120            0
+ 44    179,382,034        1,122,848        1,122,736           112            0
+ 45    182,527,846           74,264           74,160           104            0
+ 46    182,527,978           74,240           74,144            96            0
+ 47    182,528,313           73,992           73,904            88            0
+ 48    182,529,052           73,888           73,816            72            0
+ 49    182,541,710           73,864           73,808            56            0
+ 50    182,543,497           73,840           73,792            48            0
+ 51    182,543,567           73,816           73,776            40            0
+ 52    182,543,847           73,792           73,760            32            0
+99.96% (73,760B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.53% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.53% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.53% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.53% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.53% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.39% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.39% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.39% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.39% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.39% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.39% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.39% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.39% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.39% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.39% (1,024B) 0x10EDB3: main (tea.cpp:5)
+|
+->00.04% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 53    182,543,963           73,768           73,744            24            0
+ 54    182,544,079           73,744           73,728            16            0
+ 55    182,551,826            1,032            1,024             8            0
+ 56    182,553,839                0                0             0            0

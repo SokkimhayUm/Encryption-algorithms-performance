@@ -1,0 +1,127 @@
+desc: (none)
+cmd: ./present_Memory
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1459083
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1560121
+mem_heap_B=72720
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1560959
+mem_heap_B=89104
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1562067
+mem_heap_B=105488
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1563175
+mem_heap_B=121872
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=68736591488
+mem_heap_B=122896
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=68736627525
+mem_heap_B=122896
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=peak
+n3: 122896 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x494E757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n4: 49168 0x10A32B: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) [clone .constprop.0] (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+  n0: 16384 0x108E83: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+  n0: 16384 0x108E8F: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+  n0: 16384 0x108E9B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1024 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=68736627525
+mem_heap_B=106512
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=68736627562
+mem_heap_B=90128
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=68736627599
+mem_heap_B=73744
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=68736627636
+mem_heap_B=73728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=68736643957
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=68736646623
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

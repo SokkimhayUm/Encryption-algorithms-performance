@@ -1,0 +1,868 @@
+desc: (none)
+cmd: ./simon
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=9673982
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=9688574
+mem_heap_B=72720
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=9689654
+mem_heap_B=72736
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=9689874
+mem_heap_B=72752
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=9692862
+mem_heap_B=72768
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9692956
+mem_heap_B=72784
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=9694688
+mem_heap_B=72792
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=9803401
+mem_heap_B=73816
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9820995
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+ n0: 176 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=9822744
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=9834280
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+ n0: 208 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=9834280
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=9835158
+mem_heap_B=73920
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=9836987
+mem_heap_B=74160
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9849230
+mem_heap_B=139696
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=9849318
+mem_heap_B=205232
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=9849406
+mem_heap_B=270768
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=11294532
+mem_heap_B=270800
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=11294610
+mem_heap_B=271344
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=11295957
+mem_heap_B=271376
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=11296035
+mem_heap_B=271920
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=detailed
+n3: 271920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 198104 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 1480 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 1112 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=11306638
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=11308645
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=11320512
+mem_heap_B=280615
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=11326107
+mem_heap_B=280684
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=11326778
+mem_heap_B=280684
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=detailed
+n4: 280684 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 198104 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 1480 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 8192 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 8192 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8192 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+    n1: 8192 0x11437B: getCurrentRSS() (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+     n1: 8192 0x1122EB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+      n0: 8192 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+ n0: 1684 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=11326778
+mem_heap_B=280653
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=11337795
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=11341988
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=11344687
+mem_heap_B=271920
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=250970009
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=250970557
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=250970997
+mem_heap_B=280615
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=250974803
+mem_heap_B=280684
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=250974878
+mem_heap_B=280653
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=250979471
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=detailed
+n4: 280584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 198104 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 1480 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 8192 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 8192 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8192 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 8192 0x11437B: getCurrentRSS() (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+     n1: 8192 0x112393: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+      n0: 8192 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1584 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=250979588
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=250980077
+mem_heap_B=271920
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=490600868
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=490601416
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=490601856
+mem_heap_B=280615
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=490605662
+mem_heap_B=280684
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=490605737
+mem_heap_B=280653
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=490610330
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=490610447
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=490610936
+mem_heap_B=271920
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=detailed
+n3: 271920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 198104 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 1480 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 1112 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=490668160
+mem_heap_B=272392
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=490668739
+mem_heap_B=280584
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=490670763
+mem_heap_B=280599
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=490670877
+mem_heap_B=281071
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=490671586
+mem_heap_B=285167
+mem_heap_extra_B=217
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=490672458
+mem_heap_B=286520
+mem_heap_extra_B=232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=490675682
+mem_heap_B=286520
+mem_heap_extra_B=232
+mem_stacks_B=0
+heap_tree=peak
+n5: 286520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 198104 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 1480 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 8192 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n2: 8192 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8192 0x4E69E07: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+    n1: 8192 0x11273B: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+     n0: 8192 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 5120 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n2: 5120 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 4096 0x5036BBB: _IO_file_xsgetn (fileops.c:1287)
+     n1: 4096 0x503570F: fread_unlocked (iofread_u.c:40)
+      n1: 4096 0x506A62F: __tzfile_read (tzfile.c:186)
+       n1: 4096 0x506A0AB: tzset_internal (tzset.c:405)
+        n1: 4096 0x506A317: __tz_convert (tzset.c:577)
+         n1: 4096 0x506863B: ctime (ctime.c:27)
+          n1: 4096 0x112767: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+           n0: 4096 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n0: 2400 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=490675682
+mem_heap_B=282424
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=490675817
+mem_heap_B=281952
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=490675912
+mem_heap_B=281972
+mem_heap_extra_B=228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=490676050
+mem_heap_B=281993
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=490676218
+mem_heap_B=282014
+mem_heap_extra_B=266
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=490706762
+mem_heap_B=273822
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=490707251
+mem_heap_B=273350
+mem_heap_extra_B=242
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=490709378
+mem_heap_B=272806
+mem_heap_extra_B=234
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=490709571
+mem_heap_B=272774
+mem_heap_extra_B=226
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=490710824
+mem_heap_B=272230
+mem_heap_extra_B=218
+mem_stacks_B=0
+heap_tree=detailed
+n3: 272230 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 196984 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 196624 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n1: 65536 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 65536 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 360 in 7 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 2542 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=490711017
+mem_heap_B=272198
+mem_heap_extra_B=210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=490908544
+mem_heap_B=206662
+mem_heap_extra_B=202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=491105236
+mem_heap_B=141126
+mem_heap_extra_B=194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=491301928
+mem_heap_B=75590
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=491302060
+mem_heap_B=75574
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=491302395
+mem_heap_B=75334
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=491303134
+mem_heap_B=75246
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=491315729
+mem_heap_B=75238
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=491317609
+mem_heap_B=75222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=491317782
+mem_heap_B=75206
+mem_heap_extra_B=122
+mem_stacks_B=0
+heap_tree=detailed
+n4: 75206 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1353 0x506A75F: __tzfile_read (tzfile.c:279)
+  n1: 1353 0x506A0AB: tzset_internal (tzset.c:405)
+   n1: 1353 0x506A317: __tz_convert (tzset.c:577)
+    n1: 1353 0x506863B: ctime (ctime.c:27)
+     n1: 1353 0x112767: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+      n0: 1353 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n2: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 125 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=491318067
+mem_heap_B=75190
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=491318183
+mem_heap_B=75174
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=491318299
+mem_heap_B=75158
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=491326046
+mem_heap_B=2454
+mem_heap_extra_B=90
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=491328059
+mem_heap_B=1430
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=491328150
+mem_heap_B=1410
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=491328188
+mem_heap_B=1389
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=491328226
+mem_heap_B=1368
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=491328263
+mem_heap_B=1353
+mem_heap_extra_B=15
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=491329541
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 0 in 11 places, all below massif's threshold (1.00%)

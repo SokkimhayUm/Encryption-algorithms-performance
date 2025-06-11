@@ -1,0 +1,402 @@
+--------------------------------------------------------------------------------
+Command:            ./simon
+Massif arguments:   (none)
+ms_print arguments: massif.out.6348
+--------------------------------------------------------------------------------
+
+
+    KB
+280.0^                                                                       #
+     | @                                  @                                  #
+     | @::::::::::::::::::::::::::::::::::@::::::::::::::::::::::::::::::::::#
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+     | @                                  @                                  #
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   468.6
+
+Number of snapshots: 84
+ Detailed snapshots: [9, 11, 21, 26, 36, 46, 53 (peak), 63, 73, 83]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,673,982           72,712           72,704             8            0
+  2      9,688,574           72,736           72,720            16            0
+  3      9,689,654           72,760           72,736            24            0
+  4      9,689,874           72,784           72,752            32            0
+  5      9,692,862           72,808           72,768            40            0
+  6      9,692,956           72,832           72,784            48            0
+  7      9,694,688           72,856           72,792            64            0
+  8      9,803,401           73,888           73,816            72            0
+  9      9,820,995           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|                   
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,822,744           74,032           73,936            96            0
+ 11      9,834,280           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|                   
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,834,280           73,992           73,904            88            0
+ 13      9,835,158           74,016           73,920            96            0
+ 14      9,836,987           74,264           74,160           104            0
+ 15      9,849,230          139,808          139,696           112            0
+ 16      9,849,318          205,352          205,232           120            0
+ 17      9,849,406          270,896          270,768           128            0
+ 18     11,294,532          270,936          270,800           136            0
+ 19     11,294,610          271,488          271,344           144            0
+ 20     11,295,957          271,528          271,376           152            0
+ 21     11,296,035          272,080          271,920           160            0
+99.94% (271,920B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.81% (198,104B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->72.27% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->24.09% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.09% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.09% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.54% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->26.72% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->26.72% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->26.72% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->26.72% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->26.72% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->00.41% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     11,306,638          272,568          272,392           176            0
+ 23     11,308,645          280,768          280,584           184            0
+ 24     11,320,512          280,808          280,615           193            0
+ 25     11,326,107          280,896          280,684           212            0
+ 26     11,326,778          280,896          280,684           212            0
+99.92% (280,684B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->70.53% (198,104B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->70.00% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->23.33% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.33% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->23.33% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.33% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->23.33% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.33% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.53% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->25.88% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->25.88% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->25.88% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->25.88% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->25.88% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->02.92% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.92% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->02.92% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->02.92% (8,192B) 0x11437B: getCurrentRSS() (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|       ->02.92% (8,192B) 0x1122EB: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|         ->02.92% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|           
+->00.60% (1,684B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27     11,326,778          280,856          280,653           203            0
+ 28     11,337,795          280,768          280,584           184            0
+ 29     11,341,988          272,568          272,392           176            0
+ 30     11,344,687          272,080          271,920           160            0
+ 31    250,970,009          272,568          272,392           176            0
+ 32    250,970,557          280,768          280,584           184            0
+ 33    250,970,997          280,808          280,615           193            0
+ 34    250,974,803          280,896          280,684           212            0
+ 35    250,974,878          280,856          280,653           203            0
+ 36    250,979,471          280,768          280,584           184            0
+99.93% (280,584B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->70.56% (198,104B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->70.03% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->23.34% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.34% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->23.34% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.34% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->23.34% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->23.34% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.53% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->25.89% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->25.89% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->25.89% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->25.89% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->25.89% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->02.92% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.92% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->02.92% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->02.92% (8,192B) 0x11437B: getCurrentRSS() (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|       ->02.92% (8,192B) 0x112393: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|       | ->02.92% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|       |   
+|       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|       
+->00.56% (1,584B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 37    250,979,588          272,568          272,392           176            0
+ 38    250,980,077          272,080          271,920           160            0
+ 39    490,600,868          272,568          272,392           176            0
+ 40    490,601,416          280,768          280,584           184            0
+ 41    490,601,856          280,808          280,615           193            0
+ 42    490,605,662          280,896          280,684           212            0
+ 43    490,605,737          280,856          280,653           203            0
+ 44    490,610,330          280,768          280,584           184            0
+ 45    490,610,447          272,568          272,392           176            0
+ 46    490,610,936          272,080          271,920           160            0
+99.94% (271,920B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.81% (198,104B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->72.27% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->24.09% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.09% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.09% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.09% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.54% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->26.72% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->26.72% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->26.72% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->26.72% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->26.72% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->00.41% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 47    490,668,101          272,568          272,392           176            0
+ 48    490,668,680          280,768          280,584           184            0
+ 49    490,670,704          280,792          280,599           193            0
+ 50    490,670,818          281,280          281,071           209            0
+ 51    490,671,527          285,384          285,167           217            0
+ 52    490,672,399          286,752          286,520           232            0
+ 53    490,675,623          286,752          286,520           232            0
+99.92% (286,520B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->69.09% (198,104B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->68.57% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->22.85% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->22.85% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->22.85% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->22.85% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->22.85% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->22.85% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.52% (1,480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->25.35% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->25.35% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->25.35% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->25.35% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->25.35% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->02.86% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->02.86% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->02.86% (8,192B) 0x4E69E07: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   | ->02.86% (8,192B) 0x11273B: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|   |   ->02.86% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.79% (5,120B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.79% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.79% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.43% (4,096B) 0x5036BBB: _IO_file_xsgetn (fileops.c:1287)
+|     | ->01.43% (4,096B) 0x503570F: fread_unlocked (iofread_u.c:40)
+|     |   ->01.43% (4,096B) 0x506A62F: __tzfile_read (tzfile.c:186)
+|     |     ->01.43% (4,096B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     |       ->01.43% (4,096B) 0x506A317: __tz_convert (tzset.c:577)
+|     |         ->01.43% (4,096B) 0x506863B: ctime (ctime.c:27)
+|     |           ->01.43% (4,096B) 0x112767: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|     |             ->01.43% (4,096B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|     |               
+|     ->00.36% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.84% (2,400B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 54    490,675,623          282,648          282,424           224            0
+ 55    490,675,758          282,160          281,952           208            0
+ 56    490,675,853          282,200          281,972           228            0
+ 57    490,675,991          282,240          281,993           247            0
+ 58    490,676,159          282,280          282,014           266            0
+ 59    490,706,561          274,080          273,822           258            0
+ 60    490,707,050          273,592          273,350           242            0
+ 61    490,709,177          273,040          272,806           234            0
+ 62    490,709,370          273,000          272,774           226            0
+ 63    490,710,623          272,448          272,230           218            0
+99.92% (272,230B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.30% (196,984B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->72.17% (196,624B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | ->24.05% (65,536B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.05% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.05% (65,536B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.05% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->24.05% (65,536B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | | ->24.05% (65,536B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.13% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->26.69% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->26.69% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->26.69% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->26.69% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->26.69% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->00.93% (2,542B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 64    490,710,816          272,408          272,198           210            0
+ 65    490,908,343          206,864          206,662           202            0
+ 66    491,105,035          141,320          141,126           194            0
+ 67    491,301,727           75,776           75,590           186            0
+ 68    491,301,859           75,752           75,574           178            0
+ 69    491,302,194           75,504           75,334           170            0
+ 70    491,302,933           75,400           75,246           154            0
+ 71    491,315,528           75,376           75,238           138            0
+ 72    491,317,408           75,352           75,222           130            0
+ 73    491,317,581           75,328           75,206           122            0
+99.84% (75,206B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.52% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->96.52% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->96.52% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->96.52% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->96.52% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.80% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.80% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.80% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.80% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.80% (1,353B) 0x112767: void BenchmarkBlockCipher<CryptoPP::SIMON128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|         ->01.80% (1,353B) 0x11046B: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|           
+->01.36% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.36% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->01.36% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->01.36% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->01.36% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->01.36% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->01.36% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->01.36% (1,024B) 0x110433: main (in /home/kali/Desktop/share/64 KB/Speed & RAM/simon)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.17% (125B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 74    491,317,866           75,304           75,190           114            0
+ 75    491,317,982           75,280           75,174           106            0
+ 76    491,318,098           75,256           75,158            98            0
+ 77    491,325,845            2,544            2,454            90            0
+ 78    491,327,858            1,512            1,430            82            0
+ 79    491,327,949            1,472            1,410            62            0
+ 80    491,327,987            1,432            1,389            43            0
+ 81    491,328,025            1,392            1,368            24            0
+ 82    491,328,062            1,368            1,353            15            0
+ 83    491,329,340                0                0             0            0
+00.00% (0B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+

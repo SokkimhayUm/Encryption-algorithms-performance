@@ -1,0 +1,409 @@
+--------------------------------------------------------------------------------
+Command:            ./speck
+Massif arguments:   (none)
+ms_print arguments: massif.out.2551
+--------------------------------------------------------------------------------
+
+
+    KB
+135.5^                                                                       #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@::::::::::::::::::::::::::::::::@:::::::::::::::::::::::::::::::::::::#
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+     |@                                @                                     #
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   719.1
+
+Number of snapshots: 84
+ Detailed snapshots: [9, 11, 21, 26, 36, 46, 53 (peak), 63, 73, 83]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,674,527           72,712           72,704             8            0
+  2      9,689,119           72,736           72,720            16            0
+  3      9,690,199           72,760           72,736            24            0
+  4      9,690,419           72,784           72,752            32            0
+  5      9,693,407           72,808           72,768            40            0
+  6      9,693,501           72,832           72,784            48            0
+  7      9,695,233           72,856           72,792            64            0
+  8      9,803,912           73,888           73,816            72            0
+  9      9,821,506           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110433: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|                   
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,823,254           74,032           73,936            96            0
+ 11      9,834,716           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110433: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|                   
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,834,716           73,992           73,904            88            0
+ 13      9,835,634           74,016           73,920            96            0
+ 14      9,837,463           74,264           74,160           104            0
+ 15      9,849,706           90,656           90,544           112            0
+ 16      9,849,794          107,048          106,928           120            0
+ 17      9,849,882          123,440          123,312           128            0
+ 18     10,213,663          123,480          123,344           136            0
+ 19     10,213,742          123,744          123,600           144            0
+ 20     10,214,551          123,784          123,632           152            0
+ 21     10,214,630          124,048          123,888           160            0
+99.87% (123,888B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.61% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.61% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.61% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.61% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.61% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.37% (50,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.64% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->13.21% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.21% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.21% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.73% (904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     10,224,696          124,536          124,360           176            0
+ 23     10,226,703          132,736          132,552           184            0
+ 24     10,238,565          132,776          132,583           193            0
+ 25     10,244,160          132,864          132,652           212            0
+ 26     10,244,831          132,864          132,652           212            0
+99.84% (132,652B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.72% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->54.72% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->54.72% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->54.72% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->54.72% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.69% (50,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.01% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->12.33% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.33% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->12.33% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.33% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->12.33% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.33% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.68% (904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.17% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.17% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.17% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.17% (8,192B) 0x114383: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|       ->06.17% (8,192B) 0x1122EB: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|         ->06.17% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|           
+->01.27% (1,684B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27     10,244,831          132,824          132,621           203            0
+ 28     10,255,848          132,736          132,552           184            0
+ 29     10,260,041          124,536          124,360           176            0
+ 30     10,262,740          124,048          123,888           160            0
+ 31    349,226,869          124,536          124,360           176            0
+ 32    349,227,417          132,736          132,552           184            0
+ 33    349,227,857          132,776          132,583           193            0
+ 34    349,231,663          132,864          132,652           212            0
+ 35    349,231,738          132,824          132,621           203            0
+ 36    349,236,331          132,736          132,552           184            0
+99.86% (132,552B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.77% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->54.77% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->54.77% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->54.77% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->54.77% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.72% (50,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.04% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->12.34% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.34% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->12.34% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.34% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->12.34% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->12.34% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.68% (904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.17% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.17% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.17% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.17% (8,192B) 0x114383: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|       ->06.17% (8,192B) 0x112393: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|       | ->06.17% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|       |   
+|       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|       
+->01.19% (1,584B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 37    349,236,448          124,536          124,360           176            0
+ 38    349,236,937          124,048          123,888           160            0
+ 39    753,732,575          124,536          124,360           176            0
+ 40    753,733,123          132,736          132,552           184            0
+ 41    753,733,563          132,776          132,583           193            0
+ 42    753,737,369          132,864          132,652           212            0
+ 43    753,737,444          132,824          132,621           203            0
+ 44    753,742,037          132,736          132,552           184            0
+ 45    753,742,154          124,536          124,360           176            0
+ 46    753,742,643          124,048          123,888           160            0
+99.87% (123,888B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.61% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.61% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.61% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.61% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.61% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.37% (50,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.64% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->13.21% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.21% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.21% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.21% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.73% (904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 47    753,784,292          124,536          124,360           176            0
+ 48    753,784,871          132,736          132,552           184            0
+ 49    753,786,895          132,760          132,567           193            0
+ 50    753,787,009          133,248          133,039           209            0
+ 51    753,787,718          137,352          137,135           217            0
+ 52    753,788,590          138,720          138,488           232            0
+ 53    753,791,814          138,720          138,488           232            0
+99.83% (138,488B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->52.41% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->52.41% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->52.41% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->52.41% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->52.41% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->36.10% (50,072B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->35.44% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->11.81% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->11.81% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->11.81% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->11.81% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->11.81% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->11.81% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.65% (904B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.91% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->05.91% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->05.91% (8,192B) 0x4E69E07: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   | ->05.91% (8,192B) 0x112747: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|   |   ->05.91% (8,192B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->03.69% (5,120B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->03.69% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->03.69% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->02.95% (4,096B) 0x5036BBB: _IO_file_xsgetn (fileops.c:1287)
+|     | ->02.95% (4,096B) 0x503570F: fread_unlocked (iofread_u.c:40)
+|     |   ->02.95% (4,096B) 0x506A62F: __tzfile_read (tzfile.c:186)
+|     |     ->02.95% (4,096B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     |       ->02.95% (4,096B) 0x506A317: __tz_convert (tzset.c:577)
+|     |         ->02.95% (4,096B) 0x506863B: ctime (ctime.c:27)
+|     |           ->02.95% (4,096B) 0x112773: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|     |             ->02.95% (4,096B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|     |               
+|     ->00.74% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->01.73% (2,400B) in 5 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 54    753,791,814          134,616          134,392           224            0
+ 55    753,791,949          134,128          133,920           208            0
+ 56    753,792,044          134,168          133,940           228            0
+ 57    753,792,182          134,208          133,961           247            0
+ 58    753,792,350          134,248          133,982           266            0
+ 59    753,822,627          126,048          125,790           258            0
+ 60    753,823,116          125,560          125,318           242            0
+ 61    753,824,775          125,296          125,062           234            0
+ 62    753,824,968          125,256          125,030           226            0
+ 63    753,825,753          124,992          124,774           218            0
+99.83% (124,774B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.17% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.17% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.17% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.17% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.17% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->39.62% (49,528B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.34% (49,168B) 0x1118FF: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | ->13.11% (16,384B) 0x112227: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.11% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.11% (16,384B) 0x112233: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.11% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->13.11% (16,384B) 0x11223F: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | | ->13.11% (16,384B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.29% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.08% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.08% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.08% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.08% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.08% (1,353B) 0x112773: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|         ->01.08% (1,353B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|           
+->00.95% (1,189B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 64    753,825,946          124,952          124,742           210            0
+ 65    753,876,057          108,560          108,358           202            0
+ 66    753,925,293           92,168           91,974           194            0
+ 67    753,974,529           75,776           75,590           186            0
+ 68    753,974,661           75,752           75,574           178            0
+ 69    753,974,996           75,504           75,334           170            0
+ 70    753,975,735           75,400           75,246           154            0
+ 71    753,988,330           75,376           75,238           138            0
+ 72    753,990,205           75,352           75,222           130            0
+ 73    753,990,378           75,328           75,206           122            0
+99.84% (75,206B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.52% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->96.52% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->96.52% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->96.52% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->96.52% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.80% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.80% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.80% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.80% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.80% (1,353B) 0x112773: void BenchmarkBlockCipher<CryptoPP::SPECK128>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|         ->01.80% (1,353B) 0x11046B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|           
+->01.36% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.36% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->01.36% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->01.36% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->01.36% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->01.36% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->01.36% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->01.36% (1,024B) 0x110433: main (in /home/kali/Desktop/share/16KB/Speed & RAM/speck)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.17% (125B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 74    753,990,663           75,304           75,190           114            0
+ 75    753,990,779           75,280           75,174           106            0
+ 76    753,990,895           75,256           75,158            98            0
+ 77    753,998,642            2,544            2,454            90            0
+ 78    754,000,655            1,512            1,430            82            0
+ 79    754,000,746            1,472            1,410            62            0
+ 80    754,000,784            1,432            1,389            43            0
+ 81    754,000,822            1,392            1,368            24            0
+ 82    754,000,859            1,368            1,353            15            0
+ 83    754,002,137                0                0             0            0
+00.00% (0B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+

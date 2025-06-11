@@ -1,0 +1,356 @@
+Command:            ./aes
+Massif arguments:   (none)
+ms_print arguments: massif.out.4567
+--------------------------------------------------------------------------------
+
+
+    KB
+855.2^                                                                       :
+     |:#::::::::::::::::::::::::::::::::::@::::::::::::::::::::::::::::::::::@
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |:#                                  @                                  @
+     |@#                                  @                                  @
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   884.6
+
+Number of snapshots: 79
+ Detailed snapshots: [9, 11, 21, 24 (peak), 34, 44, 54, 64, 74]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,681,555           72,712           72,704             8            0
+  2      9,696,147           72,736           72,720            16            0
+  3      9,697,227           72,760           72,736            24            0
+  4      9,697,447           72,784           72,752            32            0
+  5      9,700,469           72,808           72,768            40            0
+  6      9,700,563           72,832           72,784            48            0
+  7      9,702,295           72,856           72,792            64            0
+  8      9,810,917           73,888           73,816            72            0
+  9      9,828,245           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110673: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,829,993           74,032           73,936            96            0
+ 11      9,841,455           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x110673: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,841,455           73,992           73,904            88            0
+ 13      9,842,373           74,016           73,920            96            0
+ 14      9,844,213           74,264           74,160           104            0
+ 15      9,856,461          336,416          336,304           112            0
+ 16      9,856,549          598,568          598,448           120            0
+ 17      9,856,637          860,720          860,592           128            0
+ 18     15,627,110          860,904          860,768           136            0
+ 19     15,628,329          861,088          860,944           144            0
+ 20     15,650,806          861,576          861,416           160            0
+ 21     15,652,813          869,776          869,608           168            0
+99.98% (869,608B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->90.50% (787,128B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->90.42% (786,448B) 0x1115EB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | ->30.14% (262,144B) 0x111E0B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.14% (262,144B) 0x111E17: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.14% (262,144B) 0x111E23: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.08% (680B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->08.36% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->08.36% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->08.36% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.12% (9,776B) in 4 places, all below massif's threshold (1.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     15,664,628          869,816          869,639           177            0
+ 23     15,670,223          869,904          869,708           196            0
+ 24     15,670,894          869,904          869,708           196            0
+99.98% (869,708B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->90.48% (787,128B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->90.41% (786,448B) 0x1115EB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | ->30.13% (262,144B) 0x111E0B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.13% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.13% (262,144B) 0x111E17: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.13% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.13% (262,144B) 0x111E23: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.13% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.08% (680B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->08.36% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->08.36% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->08.36% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.14% (9,876B) in 5 places, all below massif's threshold (1.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     15,670,894          869,864          869,677           187            0
+ 26     15,681,867          869,776          869,608           168            0
+ 27     15,686,019          861,576          861,416           160            0
+ 28     15,688,718          861,088          860,944           144            0
+ 29    471,173,255          861,576          861,416           160            0
+ 30    471,173,803          869,776          869,608           168            0
+ 31    471,174,243          869,816          869,639           177            0
+ 32    471,178,049          869,904          869,708           196            0
+ 33    471,178,124          869,864          869,677           187            0
+ 34    471,182,717          869,776          869,608           168            0
+99.98% (869,608B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->90.50% (787,128B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->90.42% (786,448B) 0x1115EB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | ->30.14% (262,144B) 0x111E0B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.14% (262,144B) 0x111E17: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.14% (262,144B) 0x111E23: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.14% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.08% (680B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->08.36% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->08.36% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->08.36% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->08.36% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.12% (9,776B) in 5 places, all below massif's threshold (1.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 35    471,182,834          861,576          861,416           160            0
+ 36    471,183,323          861,088          860,944           144            0
+ 37    925,026,425          861,576          861,416           160            0
+ 38    925,026,973          869,776          869,608           168            0
+ 39    925,027,413          869,816          869,639           177            0
+ 40    925,031,219          869,904          869,708           196            0
+ 41    925,031,294          869,864          869,677           187            0
+ 42    925,035,887          869,776          869,608           168            0
+ 43    925,036,004          861,576          861,416           160            0
+ 44    925,036,493          861,088          860,944           144            0
+99.98% (860,944B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->91.41% (787,128B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->91.33% (786,448B) 0x1115EB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | ->30.44% (262,144B) 0x111E0B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.44% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.44% (262,144B) 0x111E17: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.44% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.44% (262,144B) 0x111E23: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.44% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.08% (680B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->08.44% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.44% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->08.44% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->08.44% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->08.44% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->00.13% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 45    925,154,534          861,576          861,416           160            0
+ 46    925,155,113          869,776          869,608           168            0
+ 47    925,157,137          869,800          869,623           177            0
+ 48    925,157,251          870,288          870,095           193            0
+ 49    925,157,960          874,392          874,191           201            0
+ 50    925,158,832          875,760          875,544           216            0
+ 51    925,162,056          871,656          871,448           208            0
+ 52    925,162,191          871,168          870,976           192            0
+ 53    925,162,286          871,208          870,996           212            0
+ 54    925,162,424          871,248          871,017           231            0
+99.97% (871,017B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->90.34% (787,128B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->90.27% (786,448B) 0x1115EB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | ->30.09% (262,144B) 0x111E0B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.09% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.09% (262,144B) 0x111E17: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.09% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->30.09% (262,144B) 0x111E23: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | | ->30.09% (262,144B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+| | |
+| | ->00.00% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| |
+| ->00.08% (680B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->08.34% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.34% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->08.34% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->08.34% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->08.34% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.28% (11,185B) in 9 places, all below massif's threshold (1.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 55    925,162,592          871,288          871,038           250            0
+ 56    925,192,668          863,088          862,846           242            0
+ 57    925,193,157          862,600          862,374           226            0
+ 58    925,195,717          862,416          862,198           218            0
+ 59    925,196,672          862,232          862,022           210            0
+ 60    925,983,332          600,080          599,878           202            0
+ 61    926,769,848          337,928          337,734           194            0
+ 62    927,556,364           75,776           75,590           186            0
+ 63    927,556,496           75,752           75,574           178            0
+ 64    927,557,551           75,504           75,334           170            0
+99.77% (75,334B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.29% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->96.29% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->96.29% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->96.29% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->96.29% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|
+->01.79% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.79% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.79% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.79% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.79% (1,353B) 0x11233B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|         ->01.79% (1,353B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->01.36% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.36% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.36% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->01.36% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->01.36% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->01.36% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->01.36% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->01.36% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->01.36% (1,024B) 0x110673: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|     |
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->00.34% (253B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 65    927,558,429           75,400           75,246           154            0
+ 66    927,571,033           75,376           75,238           138            0
+ 67    927,572,780           75,352           75,222           130            0
+ 68    927,572,850           75,328           75,206           122            0
+ 69    927,573,130           75,304           75,190           114            0
+ 70    927,573,246           75,280           75,174           106            0
+ 71    927,573,362           75,256           75,158            98            0
+ 72    927,581,109            2,544            2,454            90            0
+ 73    927,583,122            1,512            1,430            82            0
+ 74    927,583,213            1,472            1,410            62            0
+95.79% (1,410B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->91.92% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->91.92% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->91.92% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->91.92% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->91.92% (1,353B) 0x11233B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|         ->91.92% (1,353B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->02.85% (42B) 0x50696C3: __tzstring_len (tzset.c:98)
+| ->02.85% (42B) 0x506AE0F: __tzfile_read (tzfile.c:412)
+|   ->02.85% (42B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     ->02.85% (42B) 0x506A317: __tz_convert (tzset.c:577)
+|       ->02.85% (42B) 0x506863B: ctime (ctime.c:27)
+|         ->02.85% (42B) 0x11233B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|           ->02.85% (42B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->01.02% (15B) 0x505575F: strdup (strdup.c:42)
+| ->01.02% (15B) 0x506A093: tzset_internal (tzset.c:402)
+|   ->01.02% (15B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.02% (15B) 0x506863B: ctime (ctime.c:27)
+|       ->01.02% (15B) 0x11233B: void BenchmarkBlockCipher<CryptoPP::Rijndael>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|         ->01.02% (15B) 0x1106AB: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/aes)
+|
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 75    927,583,251            1,432            1,389            43            0
+ 76    927,583,289            1,392            1,368            24            0
+ 77    927,583,326            1,368            1,353            15            0
+ 78    927,584,604                0                0             0            0

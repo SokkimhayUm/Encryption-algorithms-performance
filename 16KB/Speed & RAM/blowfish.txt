@@ -1,0 +1,405 @@
+--------------------------------------------------------------------------------
+Command:            ./blowfish
+Massif arguments:   (none)
+ms_print arguments: massif.out.2564
+--------------------------------------------------------------------------------
+
+
+    KB
+134.9^                                                                       #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@:::::::::::::::::::::::::::::::::::@::::::::::::::::::::::::::::::::::#
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+     |@                                   @                                  #
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   1.383
+
+Number of snapshots: 76
+ Detailed snapshots: [9, 11, 21, 22, 32, 42, 49 (peak), 59, 69]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      9,677,626           72,712           72,704             8            0
+  2      9,692,218           72,736           72,720            16            0
+  3      9,693,298           72,760           72,736            24            0
+  4      9,693,518           72,784           72,752            32            0
+  5      9,696,506           72,808           72,768            40            0
+  6      9,696,600           72,832           72,784            48            0
+  7      9,698,372           72,856           72,792            64            0
+  8      9,807,081           73,888           73,816            72            0
+  9      9,824,640           73,992           73,904            88            0
+99.88% (73,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.26% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.26% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.26% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.26% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10EF33: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|                   
+->00.24% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      9,826,343           74,032           73,936            96            0
+ 11      9,837,839           74,032           73,936            96            0
+99.87% (73,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.21% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->98.21% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->98.21% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->98.21% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.38% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.38% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.38% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->01.38% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|         ->01.38% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->01.38% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|             ->01.38% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|               ->01.38% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|                 ->01.38% (1,024B) 0x10EF33: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|                   
+->00.28% (208B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      9,837,839           73,992           73,904            88            0
+ 13      9,838,758           74,016           73,920            96            0
+ 14      9,840,589           74,264           74,160           104            0
+ 15      9,852,833           90,656           90,544           112            0
+ 16      9,852,922          107,048          106,928           120            0
+ 17      9,853,011          123,440          123,312           128            0
+ 18     10,555,378          123,928          123,784           144            0
+ 19     10,557,419          132,128          131,976           152            0
+ 20     10,569,281          132,168          132,007           161            0
+ 21     10,574,876          132,256          132,076           180            0
+99.86% (132,076B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.97% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->54.97% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->54.97% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.42% (49,496B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.18% (49,168B) 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | ->12.39% (16,384B) 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.39% (16,384B) 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.39% (16,384B) 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.25% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.19% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.19% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.19% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.19% (8,192B) 0x112643: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|       ->06.19% (8,192B) 0x11070F: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|         ->06.19% (8,192B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|           
+->01.27% (1,684B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     10,575,547          132,256          132,076           180            0
+99.86% (132,076B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.97% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->54.97% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->54.97% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->54.97% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.42% (49,496B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.18% (49,168B) 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | ->12.39% (16,384B) 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.39% (16,384B) 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.39% (16,384B) 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.39% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.25% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.19% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.19% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.19% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.19% (8,192B) 0x112643: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|       ->06.19% (8,192B) 0x11070F: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|         ->06.19% (8,192B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|           
+->01.27% (1,684B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23     10,575,547          132,216          132,045           171            0
+ 24     10,586,527          132,128          131,976           152            0
+ 25     10,590,720          123,928          123,784           144            0
+ 26     10,593,419          123,440          123,312           128            0
+ 27    749,941,593          123,928          123,784           144            0
+ 28    749,942,141          132,128          131,976           152            0
+ 29    749,942,581          132,168          132,007           161            0
+ 30    749,946,387          132,256          132,076           180            0
+ 31    749,946,462          132,216          132,045           171            0
+ 32    749,951,055          132,128          131,976           152            0
+99.88% (131,976B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.03% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->55.03% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->55.03% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->55.03% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->55.03% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->37.46% (49,496B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->37.21% (49,168B) 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | ->12.40% (16,384B) 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.40% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.40% (16,384B) 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.40% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->12.40% (16,384B) 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->12.40% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.25% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.20% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->06.20% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->06.20% (8,192B) 0x4E69F3F: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     ->06.20% (8,192B) 0x112643: getCurrentRSS() (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|       ->06.20% (8,192B) 0x1107C3: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|       | ->06.20% (8,192B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|       |   
+|       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|       
+->01.20% (1,584B) in 4 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33    749,951,172          123,928          123,784           144            0
+ 34    749,951,661          123,440          123,312           128            0
+ 35  1,485,198,454          123,928          123,784           144            0
+ 36  1,485,199,002          132,128          131,976           152            0
+ 37  1,485,199,442          132,168          132,007           161            0
+ 38  1,485,203,248          132,256          132,076           180            0
+ 39  1,485,203,323          132,216          132,045           171            0
+ 40  1,485,207,916          132,128          131,976           152            0
+ 41  1,485,208,033          123,928          123,784           144            0
+ 42  1,485,208,522          123,440          123,312           128            0
+99.90% (123,312B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.90% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->58.90% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->58.90% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->58.90% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->58.90% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->40.10% (49,496B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->39.83% (49,168B) 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | ->13.27% (16,384B) 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->13.27% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->13.27% (16,384B) 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->13.27% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->13.27% (16,384B) 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->13.27% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.27% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.90% (1,112B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 43  1,485,250,224          123,928          123,784           144            0
+ 44  1,485,250,803          132,128          131,976           152            0
+ 45  1,485,252,743          132,152          131,991           161            0
+ 46  1,485,252,857          132,640          132,463           177            0
+ 47  1,485,253,566          136,744          136,559           185            0
+ 48  1,485,254,438          138,112          137,912           200            0
+ 49  1,485,257,662          138,112          137,912           200            0
+99.86% (137,912B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->52.64% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->52.64% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->52.64% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->52.64% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->52.64% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->35.84% (49,496B) 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+| ->35.60% (49,168B) 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | ->11.86% (16,384B) 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->11.86% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->11.86% (16,384B) 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->11.86% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->11.86% (16,384B) 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | | ->11.86% (16,384B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+| | |   
+| | ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.24% (328B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.93% (8,192B) 0x4E65913: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->05.93% (8,192B) 0x4E6910B: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   ->05.93% (8,192B) 0x4E69E07: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|   | ->05.93% (8,192B) 0x110BA3: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|   |   ->05.93% (8,192B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->03.71% (5,120B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->03.71% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->03.71% (5,120B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->02.97% (4,096B) 0x5036BBB: _IO_file_xsgetn (fileops.c:1287)
+|     | ->02.97% (4,096B) 0x503570F: fread_unlocked (iofread_u.c:40)
+|     |   ->02.97% (4,096B) 0x506A62F: __tzfile_read (tzfile.c:186)
+|     |     ->02.97% (4,096B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     |       ->02.97% (4,096B) 0x506A317: __tz_convert (tzset.c:577)
+|     |         ->02.97% (4,096B) 0x506863B: ctime (ctime.c:27)
+|     |           ->02.97% (4,096B) 0x110BCF: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|     |             ->02.97% (4,096B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|     |               
+|     ->00.74% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->01.74% (2,400B) in 5 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 50  1,485,257,662          134,008          133,816           192            0
+ 51  1,485,257,797          133,520          133,344           176            0
+ 52  1,485,257,892          133,560          133,364           196            0
+ 53  1,485,258,030          133,600          133,385           215            0
+ 54  1,485,258,198          133,640          133,406           234            0
+ 55  1,485,288,451          125,440          125,214           226            0
+ 56  1,485,288,940          124,952          124,742           210            0
+ 57  1,485,367,132          108,560          108,358           202            0
+ 58  1,485,416,369           92,168           91,974           194            0
+ 59  1,485,465,606           75,776           75,590           186            0
+99.75% (75,590B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->95.95% (72,704B) 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->95.95% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->95.95% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->95.95% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->95.95% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->01.79% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->01.79% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->01.79% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->01.79% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->01.79% (1,353B) 0x110BCF: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|         ->01.79% (1,353B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|           
+->01.35% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.35% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->01.35% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->01.35% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->01.35% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->01.35% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->01.35% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->01.35% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->01.35% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->01.35% (1,024B) 0x10EF33: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.67% (509B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 60  1,485,465,739           75,752           75,574           178            0
+ 61  1,485,466,075           75,504           75,334           170            0
+ 62  1,485,466,814           75,400           75,246           154            0
+ 63  1,485,479,446           75,376           75,238           138            0
+ 64  1,485,481,227           75,352           75,222           130            0
+ 65  1,485,481,297           75,328           75,206           122            0
+ 66  1,485,481,577           75,304           75,190           114            0
+ 67  1,485,481,693           75,280           75,174           106            0
+ 68  1,485,481,809           75,256           75,158            98            0
+ 69  1,485,489,556            2,544            2,454            90            0
+96.46% (2,454B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->53.18% (1,353B) 0x506A75F: __tzfile_read (tzfile.c:279)
+| ->53.18% (1,353B) 0x506A0AB: tzset_internal (tzset.c:405)
+|   ->53.18% (1,353B) 0x506A317: __tz_convert (tzset.c:577)
+|     ->53.18% (1,353B) 0x506863B: ctime (ctime.c:27)
+|       ->53.18% (1,353B) 0x110BCF: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|         ->53.18% (1,353B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|           
+->40.25% (1,024B) 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+| ->40.25% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:347)
+|   ->40.25% (1,024B) 0x50388FF: _IO_doallocbuf (genops.c:342)
+|     ->40.25% (1,024B) 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->40.25% (1,024B) 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->40.25% (1,024B) 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->40.25% (1,024B) 0x502B7AF: fwrite (iofwrite.c:39)
+|     |       ->40.25% (1,024B) 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |         ->40.25% (1,024B) 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+|     |           ->40.25% (1,024B) 0x10EF33: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|     |             
+|     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->01.65% (42B) 0x50696C3: __tzstring_len (tzset.c:98)
+| ->01.65% (42B) 0x506AE0F: __tzfile_read (tzfile.c:412)
+|   ->01.65% (42B) 0x506A0AB: tzset_internal (tzset.c:405)
+|     ->01.65% (42B) 0x506A317: __tz_convert (tzset.c:577)
+|       ->01.65% (42B) 0x506863B: ctime (ctime.c:27)
+|         ->01.65% (42B) 0x110BCF: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|           ->01.65% (42B) 0x10EF6B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/blowfish)
+|             
+->01.38% (35B) in 8 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 70  1,485,491,564            1,512            1,430            82            0
+ 71  1,485,491,655            1,472            1,410            62            0
+ 72  1,485,491,693            1,432            1,389            43            0
+ 73  1,485,491,731            1,392            1,368            24            0
+ 74  1,485,491,768            1,368            1,353            15            0
+ 75  1,485,493,046                0                0             0            0

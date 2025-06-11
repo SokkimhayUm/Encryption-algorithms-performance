@@ -1,0 +1,544 @@
+[Wed Jun  4 16:29:57 2025] AES Benchmark Results
+Encryption time: 0.013309 sec, 75.137266 MB/s
+Decryption time: 0.013594 sec, 73.559717 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:30:32 2025] SIMON128 Benchmark Results
+Encryption time: 0.016854 sec, 59.331748 MB/s
+Decryption time: 0.016216 sec, 61.665994 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:31:37 2025] SPECK128 Benchmark Results
+Encryption time: 0.021876 sec, 45.713153 MB/s
+Decryption time: 0.010930 sec, 91.495008 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:32:02 2025] TEA Benchmark Results
+Encryption time: 0.039268 sec, 25.466305 MB/s
+Decryption time: 0.031608 sec, 31.637297 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:33:31 2025] PRESENT Benchmark Results
+Encryption time: 4.258943 sec, 0.234800 MB/s
+Decryption time: 4.230972 sec, 0.236352 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:35:58 2025] XTEA Benchmark Results
+Encryption time: 0.132072 sec, 7.571644 MB/s
+Decryption time: 0.089537 sec, 11.168630 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:36:40 2025] Blowfish Benchmark Results
+Encryption time: 0.026933 sec, 37.129802 MB/s
+Decryption time: 0.027080 sec, 36.927465 MB/s
+Memory increase after encryption: 1152 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:36:55 2025] Triple DES Benchmark Results
+Encryption time: 0.070613 sec, 14.161636 MB/s
+Decryption time: 0.068689 sec, 14.558429 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 16:37:44 2025] RSA Benchmark Results
+Encryption time: 0.021260 sec, 1.469914 MB/s
+Decryption time: 0.929177 sec, 0.033632 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 128 KB
+Data size: 32.000000 KB
+Data integrity check: PASSED
+
+[Wed Jun  4 22:28:19 2025] AES Benchmark Results
+Encryption time: 0.085129 sec, 11.746905 MB/s
+Decryption time: 0.101273 sec, 9.874278 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Wed Jun  4 22:28:29 2025] SPECK128 Benchmark Results
+Encryption time: 0.027369 sec, 36.537089 MB/s
+Decryption time: 0.028579 sec, 34.990140 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Thu Jun  5 19:54:24 2025] TEA Benchmark Results
+Encryption time: 0.042446 sec, 23.559449 MB/s
+Decryption time: 0.031665 sec, 31.580769 MB/s
+Memory increase after encryption: 1196 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Thu Jun  5 19:55:37 2025] TEA Benchmark Results
+Encryption time: 0.033155 sec, 30.160940 MB/s
+Decryption time: 0.031665 sec, 31.581014 MB/s
+Memory increase after encryption: 1196 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Thu Jun  5 19:55:40 2025] TEA Benchmark Results
+Encryption time: 0.033257 sec, 30.069126 MB/s
+Decryption time: 0.031644 sec, 31.601104 MB/s
+Memory increase after encryption: 1196 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Thu Jun  5 19:56:28 2025] XTEA Benchmark Results
+Encryption time: 0.089568 sec, 11.164664 MB/s
+Decryption time: 0.089581 sec, 11.163092 MB/s
+Memory increase after encryption: 1184 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:38:23 2025] AES Benchmark Results
+Encryption time: 0.009825 sec, 101.778767 MB/s
+Decryption time: 0.009856 sec, 101.456180 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:39:19 2025] AES Benchmark Results
+Encryption time: 0.008277 sec, 120.817933 MB/s
+Decryption time: 0.006329 sec, 158.008586 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:41:03 2025] SIMON128 Benchmark Results
+Encryption time: 0.012458 sec, 80.267554 MB/s
+Decryption time: 0.011206 sec, 89.236483 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:41:08 2025] SPECK128 Benchmark Results
+Encryption time: 0.005411 sec, 184.800595 MB/s
+Decryption time: 0.006223 sec, 160.695077 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:41:26 2025] SPECK128 Benchmark Results
+Encryption time: 0.003648 sec, 274.139264 MB/s
+Decryption time: 0.004150 sec, 240.948934 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:41:44 2025] SIMON128 Benchmark Results
+Encryption time: 0.004039 sec, 247.584871 MB/s
+Decryption time: 0.004048 sec, 247.041127 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:50:55 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.326720 sec, 76.518188 MB/s
+Decryption time: 0.310255 sec, 80.578821 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 0.250000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:51:15 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.354468 sec, 70.528173 MB/s
+Decryption time: 0.309246 sec, 80.841680 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 0.250000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:51:22 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.358417 sec, 69.751121 MB/s
+Decryption time: 0.308968 sec, 80.914458 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 0.250000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:51:59 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.328386 sec, 76.129937 MB/s
+Decryption time: 0.310627 sec, 80.482329 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 0.250000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:53:02 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.307306 sec, 81.352101 MB/s
+Decryption time: 0.313866 sec, 79.651945 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:53:46 2025] AES Benchmark Results (100 iterations)
+Encryption time: 0.307026 sec, 81.426352 MB/s
+Decryption time: 0.312982 sec, 79.876780 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:55:18 2025] SIMON128 Benchmark Results (100 iterations)
+Encryption time: 0.379739 sec, 65.834728 MB/s
+Decryption time: 0.382782 sec, 65.311299 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:55:23 2025] SIMON128 Benchmark Results (100 iterations)
+Encryption time: 0.400193 sec, 62.469921 MB/s
+Decryption time: 0.381006 sec, 65.615765 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:55:46 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.162519 sec, 153.828224 MB/s
+Decryption time: 0.186055 sec, 134.369210 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:55:49 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.169108 sec, 147.834729 MB/s
+Decryption time: 0.187692 sec, 133.197208 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:56:10 2025] TEA Benchmark Results (100 iterations)
+Encryption time: 0.832498 sec, 30.030104 MB/s
+Decryption time: 0.765729 sec, 32.648617 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:56:13 2025] TEA Benchmark Results (100 iterations)
+Encryption time: 0.780804 sec, 32.018283 MB/s
+Decryption time: 0.765914 sec, 32.640732 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:56:23 2025] XTEA Benchmark Results
+Encryption time: 0.096278 sec, 10.386591 MB/s
+Decryption time: 0.089489 sec, 11.174607 MB/s
+Memory increase after encryption: 1184 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:56:24 2025] XTEA Benchmark Results
+Encryption time: 0.089518 sec, 11.170995 MB/s
+Decryption time: 0.089660 sec, 11.153300 MB/s
+Memory increase after encryption: 1184 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1.000000 MB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:58:13 2025] XTEA Benchmark Results (100 iterations)
+Encryption time: 0.802906 sec, 31.136888 MB/s
+Decryption time: 0.770426 sec, 32.449588 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 18:58:18 2025] XTEA Benchmark Results (100 iterations)
+Encryption time: 0.766889 sec, 32.599252 MB/s
+Decryption time: 0.811937 sec, 30.790553 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:01:45 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 0.440585 sec, 56.742694 MB/s
+Decryption time: 0.390255 sec, 64.060606 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:01:48 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 0.387999 sec, 64.433173 MB/s
+Decryption time: 0.390071 sec, 64.090895 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:02:19 2025] Triple DES Benchmark Results (100 iterations)
+Encryption time: 1.745126 sec, 14.325610 MB/s
+Decryption time: 1.691130 sec, 14.783016 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:02:25 2025] Triple DES Benchmark Results (100 iterations)
+Encryption time: 1.753364 sec, 14.258308 MB/s
+Decryption time: 1.689707 sec, 14.795462 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:14:53 2025] AES Benchmark Results (100 iterations)
+Encryption time: 1.967283 sec, 12.707884 MB/s
+Decryption time: 2.468793 sec, 10.126405 MB/s
+Memory increase after encryption: 420 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:14:56 2025] SIMON128 Benchmark Results (100 iterations)
+Encryption time: 0.933143 sec, 26.791172 MB/s
+Decryption time: 0.938724 sec, 26.631887 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:14:59 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.618682 sec, 40.408476 MB/s
+Decryption time: 0.630023 sec, 39.681112 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:15:06 2025] TEA Benchmark Results (100 iterations)
+Encryption time: 2.052488 sec, 12.180337 MB/s
+Decryption time: 3.409138 sec, 7.333232 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:15:12 2025] XTEA Benchmark Results (100 iterations)
+Encryption time: 2.105073 sec, 11.876072 MB/s
+Decryption time: 2.126313 sec, 11.757442 MB/s
+Memory increase after encryption: 428 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:15:15 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 1.035087 sec, 24.152550 MB/s
+Decryption time: 1.027016 sec, 24.342363 MB/s
+Memory increase after encryption: 256 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Fri Jun  6 19:15:27 2025] Triple DES Benchmark Results (100 iterations)
+Encryption time: 4.956876 sec, 5.043499 MB/s
+Decryption time: 4.961898 sec, 5.038395 MB/s
+Memory increase after encryption: 416 KB
+Memory increase after decryption: 256 KB
+Data buffer size: 256.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:10:09 2025] AES Benchmark Results (100 iterations)
+Encryption time: 1.259345 sec, 79.406356 MB/s
+Decryption time: 1.337540 sec, 74.764097 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:10:16 2025] AES Benchmark Results (100 iterations)
+Encryption time: 1.246528 sec, 80.222833 MB/s
+Decryption time: 1.234492 sec, 81.004975 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:13:45 2025] RSA Benchmark Results
+Encryption time: 0.021588 sec, 1.447590 MB/s
+Decryption time: 0.933292 sec, 0.033484 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 128 KB
+Data size: 32.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:14:26 2025] SIMON128 Benchmark Results (100 iterations)
+Encryption time: 1.563486 sec, 63.959624 MB/s
+Decryption time: 1.524052 sec, 65.614567 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:14:36 2025] SIMON128 Benchmark Results (100 iterations)
+Encryption time: 1.593857 sec, 62.740875 MB/s
+Decryption time: 1.519439 sec, 65.813771 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:14:40 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.650374 sec, 153.757661 MB/s
+Decryption time: 0.749136 sec, 133.487036 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:14:47 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.649092 sec, 154.061445 MB/s
+Decryption time: 0.744640 sec, 134.293163 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:14:58 2025] SPECK128 Benchmark Results (100 iterations)
+Encryption time: 0.660789 sec, 151.334220 MB/s
+Decryption time: 0.748958 sec, 133.518871 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:15:10 2025] TEA Benchmark Results (100 iterations)
+Encryption time: 3.130093 sec, 31.947937 MB/s
+Decryption time: 3.069537 sec, 32.578205 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:15:24 2025] TEA Benchmark Results (100 iterations)
+Encryption time: 3.231925 sec, 30.941314 MB/s
+Decryption time: 3.070067 sec, 32.572577 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:15:34 2025] XTEA Benchmark Results (100 iterations)
+Encryption time: 3.107326 sec, 32.182010 MB/s
+Decryption time: 3.072314 sec, 32.548759 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:15:45 2025] XTEA Benchmark Results (100 iterations)
+Encryption time: 3.113157 sec, 32.121734 MB/s
+Decryption time: 3.077997 sec, 32.488658 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:18:26 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 1.557990 sec, 64.185247 MB/s
+Decryption time: 1.564443 sec, 63.920493 MB/s
+Memory increase after encryption: 1152 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:18:30 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 1.564925 sec, 63.900846 MB/s
+Decryption time: 1.568339 sec, 63.761733 MB/s
+Memory increase after encryption: 1152 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:18:52 2025] Blowfish Benchmark Results (100 iterations)
+Encryption time: 1.590974 sec, 62.854562 MB/s
+Decryption time: 1.568174 sec, 63.768436 MB/s
+Memory increase after encryption: 1152 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:19:10 2025] Triple DES Benchmark Results (100 iterations)
+Encryption time: 6.769693 sec, 14.771718 MB/s
+Decryption time: 6.764703 sec, 14.782616 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:19:30 2025] Triple DES Benchmark Results (100 iterations)
+Encryption time: 6.782256 sec, 14.744356 MB/s
+Decryption time: 6.767937 sec, 14.775552 MB/s
+Memory increase after encryption: 1024 KB
+Memory increase after decryption: 1024 KB
+Data buffer size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:19:39 2025] RSA Benchmark Results
+Encryption time: 0.040242 sec, 0.776545 MB/s
+Decryption time: 0.933032 sec, 0.033493 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 128 KB
+Data size: 32.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:19:58 2025] RSA Benchmark Results
+Encryption time: 0.021485 sec, 1.454515 MB/s
+Decryption time: 0.933461 sec, 0.033478 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 128 KB
+Data size: 32.000000 KB
+Data integrity check: PASSED
+
+[Sat Jun  7 14:20:07 2025] RSA Benchmark Results
+Encryption time: 0.021317 sec, 1.465957 MB/s
+Decryption time: 0.934335 sec, 0.033446 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 128 KB
+Data size: 32.000000 KB
+Data integrity check: PASSED
+

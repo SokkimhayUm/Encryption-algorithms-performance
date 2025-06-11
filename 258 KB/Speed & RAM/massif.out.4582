@@ -1,0 +1,760 @@
+desc: (none)
+cmd: ./blowfish
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=9677649
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=9692241
+mem_heap_B=72720
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=9693321
+mem_heap_B=72736
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=9693541
+mem_heap_B=72752
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=9696529
+mem_heap_B=72768
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9696623
+mem_heap_B=72784
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=9698395
+mem_heap_B=72792
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=9807104
+mem_heap_B=73816
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9824663
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x10EF33: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+ n0: 176 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=9826366
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=9837862
+mem_heap_B=73936
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x10EF33: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+ n0: 208 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=9837862
+mem_heap_B=73904
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=9838781
+mem_heap_B=73920
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=9840612
+mem_heap_B=74160
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9852856
+mem_heap_B=336304
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=9852945
+mem_heap_B=598448
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=9853034
+mem_heap_B=860592
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=15962121
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=15964162
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=15976024
+mem_heap_B=869287
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=15981619
+mem_heap_B=869356
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=detailed
+n3: 869356 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 786776 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 786448 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 328 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9876 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=15982290
+mem_heap_B=869356
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=peak
+n3: 869356 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 786776 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 786448 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 328 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9876 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=15982290
+mem_heap_B=869325
+mem_heap_extra_B=171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=15993270
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=15997463
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=16000162
+mem_heap_B=860592
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1198934336
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1198934884
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1198935324
+mem_heap_B=869287
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1198939130
+mem_heap_B=869356
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1198939205
+mem_heap_B=869325
+mem_heap_extra_B=171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1198943798
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=detailed
+n3: 869256 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 786776 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 786448 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 328 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 9776 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1198943915
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1198944404
+mem_heap_B=860592
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2375319597
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2375320145
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2375320585
+mem_heap_B=869287
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2375324391
+mem_heap_B=869356
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2375324466
+mem_heap_B=869325
+mem_heap_extra_B=171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2375329059
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2375329176
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2375329665
+mem_heap_B=860592
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=detailed
+n3: 860592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 786776 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 786448 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 328 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 1112 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=2375448025
+mem_heap_B=861064
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2375448604
+mem_heap_B=869256
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2375450544
+mem_heap_B=869271
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2375450658
+mem_heap_B=869743
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2375451367
+mem_heap_B=873839
+mem_heap_extra_B=185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2375452239
+mem_heap_B=875192
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2375455463
+mem_heap_B=871096
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2375455598
+mem_heap_B=870624
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2375455693
+mem_heap_B=870644
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2375455831
+mem_heap_B=870665
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=detailed
+n3: 870665 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 786776 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n4: 786448 0x10FEAB: CryptoPP::SecBlock<unsigned char, CryptoPP::AllocatorWithCleanup<unsigned char, false> >::SecBlock(unsigned long) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110627: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110637: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n1: 262144 0x110647: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 262144 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 328 in 5 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 11185 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=2375455999
+mem_heap_B=870686
+mem_heap_extra_B=234
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2375486228
+mem_heap_B=862494
+mem_heap_extra_B=226
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2375486717
+mem_heap_B=862022
+mem_heap_extra_B=210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2376302189
+mem_heap_B=599878
+mem_heap_extra_B=202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2377088706
+mem_heap_B=337734
+mem_heap_extra_B=194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2377875223
+mem_heap_B=75590
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2377875356
+mem_heap_B=75574
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2377875692
+mem_heap_B=75334
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2377876431
+mem_heap_B=75246
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2377889063
+mem_heap_B=75238
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=detailed
+n4: 75238 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 1353 0x506A75F: __tzfile_read (tzfile.c:279)
+  n1: 1353 0x506A0AB: tzset_internal (tzset.c:405)
+   n1: 1353 0x506A317: __tz_convert (tzset.c:577)
+    n1: 1353 0x506863B: ctime (ctime.c:27)
+     n1: 1353 0x110BC3: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+      n0: 1353 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n2: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x10EF33: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 157 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=2377890844
+mem_heap_B=75222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2377890914
+mem_heap_B=75206
+mem_heap_extra_B=122
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2377891194
+mem_heap_B=75190
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2377891310
+mem_heap_B=75174
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2377891426
+mem_heap_B=75158
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2377899173
+mem_heap_B=2454
+mem_heap_extra_B=90
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2377901186
+mem_heap_B=1430
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2377901277
+mem_heap_B=1410
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2377901315
+mem_heap_B=1389
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2377901353
+mem_heap_B=1368
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1353 0x506A75F: __tzfile_read (tzfile.c:279)
+  n1: 1353 0x506A0AB: tzset_internal (tzset.c:405)
+   n1: 1353 0x506A317: __tz_convert (tzset.c:577)
+    n1: 1353 0x506863B: ctime (ctime.c:27)
+     n1: 1353 0x110BC3: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+      n0: 1353 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+ n1: 15 0x505575F: strdup (strdup.c:42)
+  n1: 15 0x506A093: tzset_internal (tzset.c:402)
+   n1: 15 0x506A317: __tz_convert (tzset.c:577)
+    n1: 15 0x506863B: ctime (ctime.c:27)
+     n1: 15 0x110BC3: void BenchmarkBlockCipher<CryptoPP::Blowfish>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+      n0: 15 0x10EF6B: main (in /home/kali/Desktop/share/258 KB/Speed & RAM/blowfish)
+ n0: 0 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=2377901390
+mem_heap_B=1353
+mem_heap_extra_B=15
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2377902668
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

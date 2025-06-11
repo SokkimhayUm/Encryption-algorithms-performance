@@ -1,0 +1,1581 @@
+desc: (none)
+cmd: ./rsa
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=50706303
+mem_heap_B=92134
+mem_heap_extra_B=882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=85927455
+mem_heap_B=92134
+mem_heap_extra_B=882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=136258228
+mem_heap_B=92134
+mem_heap_extra_B=882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=176922509
+mem_heap_B=86694
+mem_heap_extra_B=642
+mem_stacks_B=0
+heap_tree=detailed
+n6: 86694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n3: 4248 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n0: 2040 in 16 places, all below massif's threshold (1.00%)
+  n1: 1280 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 1280 in 33 places, all below massif's threshold (1.00%)
+  n1: 928 0x4AAA853: CryptoPP::Integer::Integer(unsigned long, unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 928 in 6 places, all below massif's threshold (1.00%)
+ n1: 1040 0x4FFC66B: __new_exitfn (cxa_atexit.c:114)
+  n1: 1040 0x4FFC707: __internal_atexit (cxa_atexit.c:44)
+   n1: 1040 0x4A9AFE3: CryptoPP::TheBitBucket() (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 1040 0x4A9B0EB: CryptoPP::BufferedTransformation::MaxRetrievable() const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1040 0x4AAB2F7: CryptoPP::Integer::Decode(CryptoPP::BufferedTransformation&, unsigned long, CryptoPP::Integer::Signedness) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1040 0x4AAEB1F: CryptoPP::Integer::Decode(unsigned char const*, unsigned long, CryptoPP::Integer::Signedness) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 1040 0x4AAEF2F: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n1: 1040 0x4AB21BF: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1040 0x4AB667B: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 1040 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1040 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1040 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+             n0: 1040 0x11F31B: main (rsa.cpp:77)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x11F30B: main (rsa.cpp:76)
+ n0: 656 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=211787393
+mem_heap_B=92134
+mem_heap_extra_B=882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=252089871
+mem_heap_B=92134
+mem_heap_extra_B=882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=306042043
+mem_heap_B=92134
+mem_heap_extra_B=866
+mem_stacks_B=0
+heap_tree=detailed
+n7: 92134 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 8152 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 5504 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n1: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC495B: CryptoPP::IsStrongProbablePrime(CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BC9647: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BC91A3: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+              n1: 4096 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+               n1: 4096 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+                n0: 4096 0x11F31B: main (rsa.cpp:77)
+   n0: 1408 in 32 places, all below massif's threshold (1.00%)
+  n0: 2648 in 17 places, all below massif's threshold (1.00%)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n1: 1536 0x4B350C7: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 1536 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 1536 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 1536 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1536 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1536 0x4BC495B: CryptoPP::IsStrongProbablePrime(CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 1536 0x4BC9647: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n1: 1536 0x4BC91A3: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1536 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 1536 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1536 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1536 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+             n0: 1536 0x11F31B: main (rsa.cpp:77)
+ n1: 1040 0x4FFC66B: __new_exitfn (cxa_atexit.c:114)
+  n1: 1040 0x4FFC707: __internal_atexit (cxa_atexit.c:44)
+   n1: 1040 0x4A9AFE3: CryptoPP::TheBitBucket() (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 1040 0x4A9B0EB: CryptoPP::BufferedTransformation::MaxRetrievable() const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1040 0x4AAB2F7: CryptoPP::Integer::Decode(CryptoPP::BufferedTransformation&, unsigned long, CryptoPP::Integer::Signedness) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1040 0x4AAEB1F: CryptoPP::Integer::Decode(unsigned char const*, unsigned long, CryptoPP::Integer::Signedness) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 1040 0x4AAEF2F: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n1: 1040 0x4AB21BF: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1040 0x4AB667B: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 1040 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1040 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1040 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+             n0: 1040 0x11F31B: main (rsa.cpp:77)
+ n1: 1024 0x502A233: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x50388FF: _IO_doallocbuf (genops.c:342)
+    n1: 1024 0x5037CCB: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 1024 0x5036E67: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 1024 0x5036E67: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 1024 0x502B7AF: fwrite (iofwrite.c:39)
+        n1: 1024 0x4E898AB: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+         n1: 1024 0x4E89BCF: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+          n0: 1024 0x11F30B: main (rsa.cpp:76)
+ n0: 656 in 12 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=336990572
+mem_heap_B=92318
+mem_heap_extra_B=906
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=377394711
+mem_heap_B=92318
+mem_heap_extra_B=906
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=434236883
+mem_heap_B=125264
+mem_heap_extra_B=2496
+mem_stacks_B=0
+heap_tree=detailed
+n6: 125264 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 19789 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 19789 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 19789 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 19789 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 19789 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 19789 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 19789 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 19789 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 19789 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 19789 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 19789 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 19789 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 19789 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 19789 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 19789 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 19789 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 19789 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n5: 11606 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n0: 4230 in 20 places, all below massif's threshold (1.00%)
+  n1: 2464 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 2464 in 58 places, all below massif's threshold (1.00%)
+  n1: 2304 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 2304 in 25 places, all below massif's threshold (1.00%)
+  n1: 1328 0x4AADEC7: CryptoPP::PositiveDivide(CryptoPP::Integer&, CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n2: 1328 0x4AB0C9B: CryptoPP::Integer::Divide(CryptoPP::Integer&, CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 1328 0x4AB14B7: CryptoPP::Integer::Modulo(CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1328 0x4AB3D3B: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1328 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 1328 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n1: 1328 0x4BEB0CF: CryptoPP::RSAFunction::ApplyFunction(CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1328 0x121BE7: CryptoPP::TrapdoorFunction::ApplyRandomizedFunction(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (pubkey.h:138)
+          n1: 1328 0x4BD4C23: CryptoPP::TF_EncryptorBase::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1328 0x4AA10DB: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1328 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+             n1: 1328 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+              n1: 1328 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+               n1: 1328 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                n1: 1328 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                 n1: 1328 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 1328 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                   n1: 1328 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                    n1: 1328 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                     n1: 1328 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                      n1: 1328 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                       n0: 1328 0x11F31B: main (rsa.cpp:77)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 13 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 1280 0x4AAE1CF: CryptoPP::MontgomeryRepresentation::MontgomeryRepresentation(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 1280 0x4AB3CB3: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 1280 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n2: 1280 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1280 0x4BEB0CF: CryptoPP::RSAFunction::ApplyFunction(CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 1280 0x121BE7: CryptoPP::TrapdoorFunction::ApplyRandomizedFunction(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (pubkey.h:138)
+        n1: 1280 0x4BD4C23: CryptoPP::TF_EncryptorBase::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1280 0x4AA10DB: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 1280 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+           n1: 1280 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+            n1: 1280 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 1280 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+              n1: 1280 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+               n1: 1280 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 1280 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                 n1: 1280 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                  n1: 1280 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                   n1: 1280 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                    n1: 1280 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                     n0: 1280 0x11F31B: main (rsa.cpp:77)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 3135 in 33 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=468558299
+mem_heap_B=153775
+mem_heap_extra_B=5033
+mem_stacks_B=0
+heap_tree=detailed
+n6: 153775 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 44204 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 44204 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 44204 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 44204 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14014 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC0887: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 2 places, all below massif's threshold (1.00%)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4494 in 25 places, all below massif's threshold (1.00%)
+  n1: 3200 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3200 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=498974413
+mem_heap_B=154269
+mem_heap_extra_B=5067
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=550230213
+mem_heap_B=155033
+mem_heap_extra_B=5103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=583456364
+mem_heap_B=155478
+mem_heap_extra_B=5122
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=634817070
+mem_heap_B=156242
+mem_heap_extra_B=5158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=673330957
+mem_heap_B=156943
+mem_heap_extra_B=5193
+mem_stacks_B=0
+heap_tree=detailed
+n6: 156943 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 47260 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 47260 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 47260 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 47260 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 3056 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 3056 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 3056 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 3056 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 3056 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 3056 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 3056 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 3056 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 3056 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 3056 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 3056 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 3056 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 3056 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14126 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC0887: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3328 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3328 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=711233177
+mem_heap_B=157388
+mem_heap_extra_B=5212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=754376197
+mem_heap_B=158089
+mem_heap_extra_B=5247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=805210935
+mem_heap_B=158853
+mem_heap_extra_B=5283
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=843452252
+mem_heap_B=159426
+mem_heap_extra_B=5310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=881623021
+mem_heap_B=159999
+mem_heap_extra_B=5337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=919792219
+mem_heap_B=160572
+mem_heap_extra_B=5364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=970758508
+mem_heap_B=161336
+mem_heap_extra_B=5400
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1004061399
+mem_heap_B=161781
+mem_heap_extra_B=5419
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1042158752
+mem_heap_B=162354
+mem_heap_extra_B=5446
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1067567540
+mem_heap_B=162736
+mem_heap_extra_B=5464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1110712394
+mem_heap_B=163437
+mem_heap_extra_B=5499
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1136133943
+mem_heap_B=163819
+mem_heap_extra_B=5517
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1174250171
+mem_heap_B=164392
+mem_heap_extra_B=5544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1225331479
+mem_heap_B=165156
+mem_heap_extra_B=5580
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1276401315
+mem_heap_B=165920
+mem_heap_extra_B=5616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1314595292
+mem_heap_B=166493
+mem_heap_extra_B=5643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1365922975
+mem_heap_B=157338
+mem_heap_extra_B=5206
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1428804690
+mem_heap_B=168212
+mem_heap_extra_B=5724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1480814338
+mem_heap_B=161095
+mem_heap_extra_B=5377
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1513103220
+mem_heap_B=169421
+mem_heap_extra_B=5779
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1569548651
+mem_heap_B=160394
+mem_heap_extra_B=5350
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1602068523
+mem_heap_B=170758
+mem_heap_extra_B=5842
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1632590537
+mem_heap_B=171268
+mem_heap_extra_B=5868
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1671285866
+mem_heap_B=171969
+mem_heap_extra_B=5903
+mem_stacks_B=0
+heap_tree=detailed
+n6: 171969 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 62158 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 62158 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 62158 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 62158 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 17954 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 17954 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 17954 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 17954 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 17954 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 17954 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 17954 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 17954 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 17954 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 17954 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 17954 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 17954 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 17954 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14254 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC08F3: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3456 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3456 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=1716827316
+mem_heap_B=172477
+mem_heap_extra_B=5923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1747403008
+mem_heap_B=172987
+mem_heap_extra_B=5949
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1798831726
+mem_heap_B=163702
+mem_heap_extra_B=5506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1824842837
+mem_heap_B=166252
+mem_heap_extra_B=5620
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1870323822
+mem_heap_B=174769
+mem_heap_extra_B=6031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1929074259
+mem_heap_B=168804
+mem_heap_extra_B=5700
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1972496093
+mem_heap_B=176297
+mem_heap_extra_B=6103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2023746230
+mem_heap_B=177189
+mem_heap_extra_B=6147
+mem_stacks_B=0
+heap_tree=detailed
+n6: 177189 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 67506 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 67506 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 67506 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 67506 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 23302 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 23302 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 23302 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 23302 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 23302 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 23302 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 23302 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 23302 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 23302 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 23302 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 23302 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 23302 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 23302 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14126 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC0887: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3328 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3328 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=2041202629
+mem_heap_B=177380
+mem_heap_extra_B=6156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2066620954
+mem_heap_B=177762
+mem_heap_extra_B=6174
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2092094062
+mem_heap_B=178144
+mem_heap_extra_B=6192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2117541137
+mem_heap_B=178526
+mem_heap_extra_B=6210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2142996936
+mem_heap_B=178908
+mem_heap_extra_B=6228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2143290233
+mem_heap_B=179036
+mem_heap_extra_B=6236
+mem_stacks_B=0
+heap_tree=detailed
+n6: 179036 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 69225 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 69225 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 69225 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 69225 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 25021 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 25021 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 25021 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 25021 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 25021 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 25021 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 25021 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 25021 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 25021 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 25021 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 25021 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 25021 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 25021 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14254 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC08F3: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3456 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3456 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=2168724767
+mem_heap_B=172978
+mem_heap_extra_B=5894
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2194162079
+mem_heap_B=173360
+mem_heap_extra_B=5912
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2219570948
+mem_heap_B=177750
+mem_heap_extra_B=6130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2245102173
+mem_heap_B=180436
+mem_heap_extra_B=6300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2265518285
+mem_heap_B=180818
+mem_heap_extra_B=6318
+mem_stacks_B=0
+heap_tree=detailed
+n6: 180818 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n2: 71135 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 71135 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 71135 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 71135 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 26931 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 26931 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 26931 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 26931 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 26931 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 26931 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 26931 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 26931 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 26931 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 26931 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 26931 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 26931 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 26931 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 14126 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC0887: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3328 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3328 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=2291008219
+mem_heap_B=181072
+mem_heap_extra_B=6328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2316520842
+mem_heap_B=181454
+mem_heap_extra_B=6346
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2341929688
+mem_heap_B=179164
+mem_heap_extra_B=6204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2372012550
+mem_heap_B=182346
+mem_heap_extra_B=6390
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2384995222
+mem_heap_B=182665
+mem_heap_extra_B=6407
+mem_stacks_B=0
+heap_tree=detailed
+n6: 182665 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 72854 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72854 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 72854 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 72854 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 28650 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 28650 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 28650 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 28650 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 28650 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 28650 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 28650 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 28650 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 28650 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 28650 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 28650 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 28650 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 28650 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n3: 14254 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC08F3: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3456 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3456 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=2410519450
+mem_heap_B=182919
+mem_heap_extra_B=6417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2436161981
+mem_heap_B=183301
+mem_heap_extra_B=6435
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2461588650
+mem_heap_B=183683
+mem_heap_extra_B=6453
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2487021025
+mem_heap_B=184065
+mem_heap_extra_B=6471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2512438927
+mem_heap_B=184447
+mem_heap_extra_B=6489
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2512732224
+mem_heap_B=184575
+mem_heap_extra_B=6497
+mem_stacks_B=0
+heap_tree=detailed
+n6: 184575 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 74764 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 74764 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 74764 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 74764 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 30560 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 30560 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 30560 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 30560 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 30560 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 30560 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 30560 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 30560 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 30560 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 30560 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 30560 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 30560 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 30560 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n3: 14254 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC08F3: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3456 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3456 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=2538141817
+mem_heap_B=178005
+mem_heap_extra_B=6155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2563552997
+mem_heap_B=179299
+mem_heap_extra_B=6221
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=2589093669
+mem_heap_B=185593
+mem_heap_extra_B=6543
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2614534050
+mem_heap_B=179663
+mem_heap_extra_B=6209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2639872253
+mem_heap_B=186485
+mem_heap_extra_B=6587
+mem_stacks_B=0
+heap_tree=peak
+n6: 186485 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 76674 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 76674 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 76674 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 76674 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 44204 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 44204 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 44204 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 44204 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 44204 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 44204 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 44204 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 44204 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 44204 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 44204 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 44204 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 44204 0x11EDA7: BenchmarkRSA() (rsa.cpp:35)
+                 n0: 44204 0x11F31B: main (rsa.cpp:77)
+     n1: 32470 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 32470 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+       n1: 32470 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+        n1: 32470 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 32470 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+          n1: 32470 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 32470 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 32470 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+             n1: 32470 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+              n1: 32470 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+               n1: 32470 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                n1: 32470 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                 n0: 32470 0x11F31B: main (rsa.cpp:77)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n3: 14254 0x4ABDDC7: CryptoPP::UnalignedAllocate(unsigned long) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n2: 6320 0x4AAAC17: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 4096 0x4B315C3: CryptoPP::Integer* std::__do_uninit_fill_n<CryptoPP::Integer*, unsigned long, CryptoPP::Integer>(CryptoPP::Integer*, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 4096 0x4B350DF: std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> >::_M_fill_insert(__gnu_cxx::__normal_iterator<CryptoPP::Integer*, std::vector<CryptoPP::Integer, std::allocator<CryptoPP::Integer> > >, unsigned long, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 4096 0x4B357DF: CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 4096 0x4AB3D93: CryptoPP::ModularArithmetic::SimultaneousExponentiate(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n2: 4096 0x4B0C8F7: CryptoPP::AbstractRing<CryptoPP::Integer>::Exponentiate(CryptoPP::Integer const&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+        n2: 4096 0x4AAE617: CryptoPP::a_exp_b_mod_c(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 4096 0x4BC08F3: CryptoPP::ModularRoot(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+          n1: 4096 0x4BED35B: CryptoPP::InvertibleRSAFunction::CalculateInverse(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 4096 0x4BD4467: CryptoPP::TF_DecryptorBase::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned long, unsigned char*, CryptoPP::NameValuePairs const&) const (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 4096 0x4AA130B: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+             n1: 4096 0x11FD9F: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (cryptlib.h:1749)
+              n1: 4096 0x12119B: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (filters.h:1087)
+               n1: 4096 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                n1: 4096 0x120F27: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (filters.h:361)
+                 n1: 4096 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                  n1: 4096 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+                   n1: 4096 0x12725B: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (filters.h:1444)
+                    n1: 4096 0x121693: CryptoPP::Source::PumpAll() (filters.h:1383)
+                     n1: 4096 0x1216E3: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (filters.h:1420)
+                      n1: 4096 0x12177F: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (filters.h:1486)
+                       n1: 4096 0x11EE67: BenchmarkRSA() (rsa.cpp:47)
+                        n0: 4096 0x11F31B: main (rsa.cpp:77)
+         n0: 0 in 3 places, all below massif's threshold (1.00%)
+        n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 2224 in 58 places, all below massif's threshold (1.00%)
+  n0: 4478 in 27 places, all below massif's threshold (1.00%)
+  n1: 3456 0x4AAAFC3: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n0: 3456 in 27 places, all below massif's threshold (1.00%)
+ n1: 11008 0x1260E3: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (new_allocator.h:137)
+  n1: 11008 0x125FB3: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 11008 0x125E97: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (stl_vector.h:378)
+    n1: 11008 0x125B07: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (stl_vector.h:395)
+     n1: 11008 0x12543B: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:332)
+      n2: 11008 0x12419B: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (stl_vector.h:552)
+       n1: 5504 0x11ECD3: BenchmarkRSA() (rsa.cpp:20)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+       n1: 5504 0x11ECF7: BenchmarkRSA() (rsa.cpp:21)
+        n0: 5504 0x11F31B: main (rsa.cpp:77)
+ n1: 7022 0x4BC5D13: ??? (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+  n1: 7022 0x4BC5EC3: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+   n1: 7022 0x4BC9053: CryptoPP::FirstPrime(CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::PrimeSelector const*) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n1: 7022 0x4AB66D7: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 7022 0x4BEE853: CryptoPP::InvertibleRSAFunction::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 7022 0x4A9D207: CryptoPP::GeneratableCryptoMaterial::GenerateRandomWithKeySize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+       n1: 7022 0x11EC5F: BenchmarkRSA() (rsa.cpp:9)
+        n0: 7022 0x11F31B: main (rsa.cpp:77)
+ n0: 4823 in 36 places, all below massif's threshold (1.00%)

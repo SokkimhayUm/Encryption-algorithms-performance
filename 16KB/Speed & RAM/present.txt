@@ -1,0 +1,72 @@
+--------------------------------------------------------------------------------
+Command:            ./present_Memory
+Massif arguments:   (none)
+ms_print arguments: massif.out.2566
+--------------------------------------------------------------------------------
+
+
+    KB
+120.1^                                                                       #
+     |:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+     |:                                                                      #
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   64.02
+
+Number of snapshots: 14
+ Detailed snapshots: [7 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      1,459,083           72,712           72,704             8            0
+  2      1,560,121           72,736           72,720            16            0
+  3      1,560,959           89,128           89,104            24            0
+  4      1,562,067          105,520          105,488            32            0
+  5      1,563,175          121,912          121,872            40            0
+  6 68,736,591,488          122,944          122,896            48            0
+  7 68,736,627,525          122,944          122,896            48            0
+99.96% (122,896B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->59.14% (72,704B) 0x494E757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->59.14% (72,704B) 0x4004447: call_init (dl-init.c:74)
+|   ->59.14% (72,704B) 0x4004447: call_init (dl-init.c:26)
+|     ->59.14% (72,704B) 0x4004553: _dl_init (dl-init.c:121)
+|       ->59.14% (72,704B) 0x401AD37: (below main) (dl-start.S:46)
+|         
+->39.99% (49,168B) 0x10A32B: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) [clone .constprop.0] (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+| ->13.33% (16,384B) 0x108E83: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+| | 
+| ->13.33% (16,384B) 0x108E8F: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+| | 
+| ->13.33% (16,384B) 0x108E9B: main (in /home/kali/Desktop/share/16KB/Speed & RAM/present_Memory)
+| | 
+| ->00.01% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.83% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8 68,736,627,525          106,552          106,512            40            0
+  9 68,736,627,562           90,160           90,128            32            0
+ 10 68,736,627,599           73,768           73,744            24            0
+ 11 68,736,627,636           73,744           73,728            16            0
+ 12 68,736,643,957            1,032            1,024             8            0
+ 13 68,736,646,623                0                0             0            0

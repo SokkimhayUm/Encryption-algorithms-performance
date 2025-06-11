@@ -1,0 +1,62 @@
+=== AES Benchmark ===
+AES Encryption time (100x): 0.307026 sec, 81.4264 MB/s
+AES Decryption time (100x): 0.308968 sec, 80.9145 MB/s
+AES Memory increase after encryption: 416 KB
+AES Memory increase after decryption: 256 KB
+AES Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== SIMON128 Benchmark ===
+SIMON128 Encryption time (100x): 0.379739 sec, 65.8347 MB/s
+SIMON128 Decryption time (100x): 0.382782 sec, 65.3113 MB/s
+SIMON128 Memory increase after encryption: 256 KB
+SIMON128 Memory increase after decryption: 256 KB
+SIMON128 Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== SPECK128 Benchmark ===
+SPECK128 Encryption time (100x): 0.162519 sec, 153.828 MB/s
+SPECK128 Decryption time (100x): 0.186055 sec, 134.369 MB/s
+SPECK128 Memory increase after encryption: 416 KB
+SPECK128 Memory increase after decryption: 256 KB
+SPECK128 Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== TEA Benchmark ===
+TEA Encryption time (100x): 0.780804 sec, 32.0183 MB/s
+TEA Decryption time (100x): 0.765914 sec, 32.6407 MB/s
+TEA Memory increase after encryption: 428 KB
+TEA Memory increase after decryption: 256 KB
+TEA Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== XTEA Benchmark ===
+XTEA Encryption time (100x): 0.766889 sec, 32.5993 MB/s
+XTEA Decryption time (100x): 0.770426 sec, 32.4496 MB/s
+XTEA Memory increase after encryption: 428 KB
+XTEA Memory increase after decryption: 256 KB
+XTEA Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== Blowfish Benchmark ===
+Blowfish Encryption time (100x): 0.387999 sec, 64.4332 MB/s
+Blowfish Decryption time (100x): 0.390071 sec, 64.0909 MB/s
+Blowfish Memory increase after encryption: 256 KB
+Blowfish Memory increase after decryption: 256 KB
+Blowfish Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== Triple DES Benchmark ===
+Triple DES Encryption time (100x): 1.74513 sec, 14.3256 MB/s
+Triple DES Decryption time (100x): 1.69113 sec, 14.783 MB/s
+Triple DES Memory increase after encryption: 416 KB
+Triple DES Memory increase after decryption: 256 KB
+Triple DES Data buffer size: 256 KB
+Data integrity check: PASSED
+
+=== Present Benchmark ===
+PRESENT ran 100 times on 256.000000 KB blocks
+Total data processed: 25.000000 MB
+Present Encryption time (100x): 12.995732 sec, 1.923708 MB/s
+Present Decryption time (100x): 12.994716 sec, 1.923859 MB/s
+Data integrity check: PASSED
