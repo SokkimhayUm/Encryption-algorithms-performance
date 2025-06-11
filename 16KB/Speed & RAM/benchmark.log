@@ -678,3 +678,19 @@ Memory increase after decryption: 128 KB
 Data buffer size: 16.000000 KB
 Data integrity check: PASSED
 
+[Wed Jun 11 21:02:05 2025] RSA Benchmark Results
+Encryption time: 0.177595 sec, 0.087981 MB/s
+Decryption time: 5.477146 sec, 0.002853 MB/s
+Memory increase after encryption: 512 KB
+Memory increase after decryption: 128 KB
+Data size: 16.000000 KB
+Data integrity check: PASSED
+
+[Wed Jun 11 21:02:33 2025] RSA Benchmark Results
+Encryption time: 0.011386 sec, 1.372358 MB/s
+Decryption time: 0.464047 sec, 0.033671 MB/s
+Memory increase after encryption: 128 KB
+Memory increase after decryption: 0 KB
+Data size: 16.000000 KB
+Data integrity check: PASSED
+

@@ -12,7 +12,7 @@ void BenchmarkRSA() {
     CryptoPP::RSA::PublicKey publicKey(params);
 
     const size_t maxBlockSize = (2048 / 8) - 2 * (256 / 8) - 2; // 190 bytes
-    const size_t dataSize = 32 * 1024; // 32 KB
+    const size_t dataSize = 16 * 1024; // 16 KB
     const size_t blockCount = dataSize / maxBlockSize;
 
     std::string plainBlock(maxBlockSize, 'A');

@@ -62,9 +62,9 @@ Triple DES Data buffer size: 1024 KB
 Data integrity check: PASSED
 
 === RSA Benchmark ===
-RSA Encryption time: 0.0216334 sec, 1.44452 MB/s
-RSA Decryption time: 0.92931 sec, 0.0336271 MB/s
-RSA Memory increase after encryption: 128 KB
-RSA Memory increase after decryption: 128 KB
-RSA Data size: 32.0000 KB
+RSA Encryption time: 0.703753 sec, 1.4210 MB/s
+RSA Decryption time: 29.907012 sec, 0.0334 MB/s
+RSA Memory increase after encryption: 1536 KB
+RSA Memory increase after decryption: 1280 KB
+RSA Data size: 1024.0000 KB
 Data integrity check: PASSED

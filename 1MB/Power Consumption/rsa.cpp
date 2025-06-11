@@ -16,7 +16,7 @@ bool BenchmarkRSA() {
     CryptoPP::RSA::PublicKey publicKey(params);
 
     const size_t maxBlockSize = (2048 / 8) - 2 * (256 / 8) - 2; // 190 bytes
-    const size_t dataSize = 32 * 1024; // 32 KB
+    const size_t dataSize = 1024 * 1024; // 1024 KB
     const size_t blockCount = dataSize / maxBlockSize;
 
     std::string plainBlock(maxBlockSize, 'A');
@@ -55,7 +55,7 @@ bool BenchmarkRSA() {
     return true;  // passed
 }
 
-void MultiRunRSA(int runs = 10) {
+void MultiRunRSA(int runs = 1) {
     std::cout << "Starting RSA benchmark: " << runs << " runs" << std::endl;
     bool allPassed = true;
 
@@ -81,6 +81,6 @@ void MultiRunRSA(int runs = 10) {
 }
 
 int main() {
-    MultiRunRSA(10);
+    MultiRunRSA(1);
     return 0;
 }

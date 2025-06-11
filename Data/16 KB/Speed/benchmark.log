@@ -60,3 +60,11 @@ Total data processed: 15.625000 MB
 Present Encryption time (1000x): 8.114928 sec, 1.925464 MB/s
 Present Decryption time (1000x): 8.144106 sec, 1.918565 MB/s
 Data integrity check: PASSED
+
+=== RSA Benchmark ===
+RSA Encryption time: 0.011386 sec, 1.3724 MB/s
+RSA Decryption time: 0.464047 sec, 0.0337 MB/s
+RSA Memory increase after encryption: 128 KB
+RSA Memory increase after decryption: 0 KB
+RSA Data size: 16.0000 KB
+Data integrity check: PASSED

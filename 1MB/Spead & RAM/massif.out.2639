@@ -1,0 +1,955 @@
+desc: (none)
+cmd: ./rsa
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1335418510
+mem_heap_B=1342379
+mem_heap_extra_B=80981
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2992360956
+mem_heap_B=1885869
+mem_heap_extra_B=128755
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=4046204556
+mem_heap_B=1901722
+mem_heap_extra_B=129502
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=5679262933
+mem_heap_B=1919441
+mem_heap_extra_B=130287
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=6959020673
+mem_heap_B=1945589
+mem_heap_extra_B=131571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=8355981445
+mem_heap_B=1966599
+mem_heap_extra_B=132561
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=9384592623
+mem_heap_B=1982070
+mem_heap_extra_B=133290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=10553448835
+mem_heap_B=1993330
+mem_heap_extra_B=133766
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=11581734765
+mem_heap_B=2015113
+mem_heap_extra_B=134847
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=12554105739
+mem_heap_B=2029692
+mem_heap_extra_B=135532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=13798233602
+mem_heap_B=2048410
+mem_heap_extra_B=136414
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=14540160802
+mem_heap_B=2059744
+mem_heap_extra_B=136952
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2059744 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1607789 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 1607789 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 1607789 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 1607789 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 189663 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 189663 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 189663 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 189663 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 189663 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 189663 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 189663 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 189663 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 189663 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 189663 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 189663 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 189663 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 189663 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=15762010504
+mem_heap_B=2071095
+mem_heap_extra_B=137433
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=17545326302
+mem_heap_B=2104755
+mem_heap_extra_B=139069
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=18340557730
+mem_heap_B=2109868
+mem_heap_extra_B=139260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=19773089489
+mem_heap_B=2138308
+mem_heap_extra_B=140652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=20814559193
+mem_heap_B=2153970
+mem_heap_extra_B=141390
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=21609656240
+mem_heap_B=2165875
+mem_heap_extra_B=141949
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=22668569749
+mem_heap_B=2181856
+mem_heap_extra_B=142704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=24131592462
+mem_heap_B=2196964
+mem_heap_extra_B=143364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=25285204294
+mem_heap_B=2216898
+mem_heap_extra_B=144310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=26453511189
+mem_heap_B=2234470
+mem_heap_extra_B=145138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=27116146964
+mem_heap_B=2244081
+mem_heap_extra_B=145599
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=28625207349
+mem_heap_B=2271435
+mem_heap_extra_B=146925
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=30161743078
+mem_heap_B=2294546
+mem_heap_extra_B=148014
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=31038309482
+mem_heap_B=2303421
+mem_heap_extra_B=148387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=32269899204
+mem_heap_B=2326380
+mem_heap_extra_B=149516
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2326380 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1874425 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 1874425 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 1874425 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 1874425 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 456299 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 456299 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 456299 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 456299 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 456299 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 456299 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 456299 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 456299 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 456299 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 456299 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 456299 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 456299 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 456299 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=32930603074
+mem_heap_B=2327247
+mem_heap_extra_B=149545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=34174632679
+mem_heap_B=2350198
+mem_heap_extra_B=150578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=35769744842
+mem_heap_B=2372928
+mem_heap_extra_B=151680
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=36434957078
+mem_heap_B=2388900
+mem_heap_extra_B=152460
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=38035921019
+mem_heap_B=2412966
+mem_heap_extra_B=153594
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=39001127215
+mem_heap_B=2427482
+mem_heap_extra_B=154278
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=40309243772
+mem_heap_B=2447283
+mem_heap_extra_B=155213
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2447283 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1995328 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 1995328 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 1995328 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 1995328 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 577202 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 577202 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 577202 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 577202 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 577202 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 577202 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 577202 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 577202 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 577202 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 577202 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 577202 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 577202 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 577202 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=41339915338
+mem_heap_B=2455769
+mem_heap_extra_B=155559
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=42482850551
+mem_heap_B=2472959
+mem_heap_extra_B=156369
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=43516723509
+mem_heap_B=2495350
+mem_heap_extra_B=157474
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=45185087555
+mem_heap_B=2520499
+mem_heap_extra_B=158661
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=46874384254
+mem_heap_B=2545902
+mem_heap_extra_B=159858
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=48583540305
+mem_heap_B=2571559
+mem_heap_extra_B=161065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=50302859794
+mem_heap_B=2597472
+mem_heap_extra_B=162288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=52042832923
+mem_heap_B=2623639
+mem_heap_extra_B=163521
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=53802805628
+mem_heap_B=2650060
+mem_heap_extra_B=164764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=55573133048
+mem_heap_B=2676737
+mem_heap_extra_B=166023
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=57363658673
+mem_heap_B=2703668
+mem_heap_extra_B=167292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=59179355101
+mem_heap_B=2730981
+mem_heap_extra_B=168579
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=60487279783
+mem_heap_B=2750654
+mem_heap_extra_B=169506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=61300191891
+mem_heap_B=2763006
+mem_heap_extra_B=170090
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2763006 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2311051 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2311051 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2311051 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2311051 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 892925 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 892925 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 892925 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 892925 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 892925 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 892925 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 892925 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 892925 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 892925 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 892925 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 892925 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 892925 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 892925 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=62331313282
+mem_heap_B=2771492
+mem_heap_extra_B=170436
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=62996614083
+mem_heap_B=2788344
+mem_heap_extra_B=171280
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=63167107882
+mem_heap_B=2791083
+mem_heap_extra_B=171413
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2791083 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2339128 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2339128 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2339128 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2339128 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 921002 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 921002 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 921002 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 921002 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 921002 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 921002 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 921002 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 921002 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 921002 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 921002 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 921002 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 921002 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 921002 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=63827893547
+mem_heap_B=2796583
+mem_heap_extra_B=171625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=64490570179
+mem_heap_B=2803962
+mem_heap_extra_B=171966
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=65054629280
+mem_heap_B=2819414
+mem_heap_extra_B=172746
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2819414 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2367587 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2367587 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2367587 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2367587 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 949461 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 949461 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 949461 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 949461 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 949461 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 949461 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 949461 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 949461 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 949461 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 949461 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 949461 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 949461 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 949461 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 25971 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=65719719837
+mem_heap_B=2829346
+mem_heap_extra_B=173214
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=66380425332
+mem_heap_B=2834974
+mem_heap_extra_B=173434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=66951582979
+mem_heap_B=2848001
+mem_heap_extra_B=174095
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2848001 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2396046 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2396046 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2396046 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2396046 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 977920 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 977920 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 977920 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 977920 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 977920 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 977920 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 977920 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 977920 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 977920 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 977920 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 977920 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 977920 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 977920 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=67612324243
+mem_heap_B=2849924
+mem_heap_extra_B=174172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=68274529827
+mem_heap_B=2860880
+mem_heap_extra_B=174648
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=68876469591
+mem_heap_B=2876905
+mem_heap_extra_B=175455
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2876905 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2425078 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2425078 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2425078 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2425078 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 1006952 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1006952 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1006952 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1006952 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1006952 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1006952 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1006952 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1006952 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1006952 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1006952 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1006952 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1006952 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1006952 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 25971 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=69541652159
+mem_heap_B=2886837
+mem_heap_extra_B=175923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=70202359577
+mem_heap_B=2890457
+mem_heap_extra_B=176039
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=70811749858
+mem_heap_B=2906065
+mem_heap_extra_B=176831
+mem_stacks_B=0
+heap_tree=peak
+n4: 2906065 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 2454110 0x4E9842F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 2454110 0x4E994F7: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 2454110 0x4AFC353: CryptoPP::StringSinkTemplate<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+    n2: 2454110 0x4B5F97B: CryptoPP::Filter::Output(int, unsigned char const*, unsigned long, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+     n1: 1418126 0x4AA0F77: CryptoPP::PK_DefaultEncryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1418126 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1418126 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1418126 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1418126 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1418126 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1418126 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1418126 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1418126 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1418126 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1418126 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1418126 0x11F067: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1418126 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 1035984 0x4AA11AB: CryptoPP::PK_DefaultDecryptionFilter::Put2(unsigned char const*, unsigned long, int, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+      n1: 1035984 0x1204D7: CryptoPP::BufferedTransformation::MessageEnd(int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 1035984 0x1218D3: CryptoPP::SimpleProxyFilter::LastPut(unsigned char const*, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n1: 1035984 0x4B6110F: CryptoPP::FilterWithBufferedInput::PutMaybeModifiable(unsigned char*, unsigned long, int, bool, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+         n1: 1035984 0x12165F: CryptoPP::FilterWithBufferedInput::Put2(unsigned char const*, unsigned long, int, bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+          n1: 1035984 0x4A9BBAF: CryptoPP::BufferedTransformation::TransferMessagesTo2(CryptoPP::BufferedTransformation&, unsigned int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+           n1: 1035984 0x4A9BE43: CryptoPP::BufferedTransformation::TransferAllTo2(CryptoPP::BufferedTransformation&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) (in /usr/lib/aarch64-linux-gnu/libcrypto++.so.8.7.0)
+            n1: 1035984 0x1279A7: CryptoPP::SourceTemplate<CryptoPP::StringStore>::PumpAll2(bool) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+             n1: 1035984 0x121DCB: CryptoPP::Source::PumpAll() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+              n1: 1035984 0x121E1B: CryptoPP::Source::SourceInitialize(bool, CryptoPP::NameValuePairs const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+               n1: 1035984 0x121EB7: CryptoPP::StringSource::StringSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, CryptoPP::BufferedTransformation*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                n1: 1035984 0x11F12B: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+                 n0: 1035984 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 353152 0x12682F: std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::allocate(unsigned long, void const*) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+  n1: 353152 0x1266FF: std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+   n1: 353152 0x1265E3: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_allocate(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+    n1: 353152 0x126253: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_create_storage(unsigned long) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+     n1: 353152 0x125B87: std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_base(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+      n2: 353152 0x1248E7: std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(unsigned long, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EF93: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+       n1: 176576 0x11EFB7: BenchmarkRSA() (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+        n0: 176576 0x11F903: main (in /home/kali/Desktop/share/1MB/Spead & RAM/rsa)
+ n1: 72704 0x4DFE757: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4004447: call_init (dl-init.c:74)
+   n1: 72704 0x4004447: call_init (dl-init.c:26)
+    n1: 72704 0x4004553: _dl_init (dl-init.c:121)
+     n0: 72704 0x401AD37: (below main) (dl-start.S:46)
+ n0: 26099 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=71472480689
+mem_heap_B=2906932
+mem_heap_extra_B=176860
+mem_stacks_B=0
+heap_tree=empty

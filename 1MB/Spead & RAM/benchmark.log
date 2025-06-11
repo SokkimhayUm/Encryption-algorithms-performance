@@ -542,3 +542,35 @@ Memory increase after decryption: 128 KB
 Data size: 32.000000 KB
 Data integrity check: PASSED
 
+[Wed Jun 11 20:31:08 2025] RSA Benchmark Results
+Encryption time: 0.680773 sec, 1.468918 MB/s
+Decryption time: 29.864311 sec, 0.033485 MB/s
+Memory increase after encryption: 1544 KB
+Memory increase after decryption: 1408 KB
+Data size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Wed Jun 11 20:37:43 2025] RSA Benchmark Results
+Encryption time: 0.672977 sec, 1.485936 MB/s
+Decryption time: 29.935535 sec, 0.033405 MB/s
+Memory increase after encryption: 1536 KB
+Memory increase after decryption: 1280 KB
+Data size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Wed Jun 11 20:40:03 2025] RSA Benchmark Results
+Encryption time: 0.703753 sec, 1.420953 MB/s
+Decryption time: 29.907012 sec, 0.033437 MB/s
+Memory increase after encryption: 1536 KB
+Memory increase after decryption: 1280 KB
+Data size: 1024.000000 KB
+Data integrity check: PASSED
+
+[Wed Jun 11 20:47:33 2025] RSA Benchmark Results
+Encryption time: 7.745111 sec, 0.129114 MB/s
+Decryption time: 351.452085 sec, 0.002845 MB/s
+Memory increase after encryption: 2308 KB
+Memory increase after decryption: 1408 KB
+Data size: 1024.000000 KB
+Data integrity check: PASSED
+

@@ -50,3 +50,5 @@ Algorithm,TotalTime(s),DataIntegrity
 Blowfish,4.940645,PASSED
 Algorithm,TotalTime(s),DataIntegrity
 Triple DES,21.183544,PASSED
+Algorithm,TotalTime(s),DataIntegrity
+RSA,7.186479,PASSED

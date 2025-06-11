@@ -26,3 +26,7 @@ Algorithm,TotalTime(s),DataIntegrity
 AES,2.446156,PASSED
 Algorithm,TotalTime(s),DataIntegrity
 XTEA,6.215460,PASSED
+Algorithm,TotalTime(s),DataIntegrity
+RSA,30.807302,PASSED
+Algorithm,TotalTime(s),DataIntegrity
+RSA,30.984077,PASSED

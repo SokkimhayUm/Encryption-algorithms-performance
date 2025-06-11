@@ -52,3 +52,5 @@ Algorithm,TotalTime(s),DataIntegrity
 Triple DES,8.544976,PASSED
 Algorithm,TotalTime(s),DataIntegrity
 AES,1.569539,PASSED
+Algorithm,TotalTime(s),DataIntegrity
+RSA,21.127614,PASSED
